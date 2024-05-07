@@ -129,11 +129,11 @@ function Mainpage() {
               <p class="text-size-regular-20">Not everyone surfs the web for 24 hours a day, so there’s plenty of internet that you pay for in full, but aren’t using at any given time. What happens to the unused bandwidth? Nothing. This is where BlueNode comes into the spotlight.</p>
             </div>
             <div reveal="frombottom"  class="hero_btn-wrap">
-              <Link to="/buy-page" class="secoundry-button w-inline-block">
+              <a href="/buy-page" class="secoundry-button w-inline-block">
                 <div class="button_inner-wrap secoundry">
                   <div>Join Presale</div>
                 </div>
-              </Link>
+              </a>
               <a href="#" class="secoundry-button w-inline-block">
                 <div class="button_inner-wrap secoundry">
                   <div>Read NodePaper</div>

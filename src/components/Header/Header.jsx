@@ -80,13 +80,13 @@ function Header() {
             <Link to="home#roaadmap" onClick={navClose} class="nav_link w-nav-link">ROADMAP</Link>
             <Link to="home#faq" onClick={navClose} class="nav_link w-nav-link">FAQs</Link>
             <div class="nav-btn-wrap">
-              <Link to="/buy-page" id="navbuybtn" onClick={navClose} class="secoundry-button w-inline-block">
+              <a href="/buy-page" id="navbuybtn" onClick={navClose} class="secoundry-button w-inline-block">
                 <div class="button_inner-wrap">
                   <div class="blackbtn-icon"> <img src={btnblackIcon} alt="" /></div>
                   <div class="colorbtn-icon "><img src={btncolorIcon } alt="" /></div>
                   <div class="btn-text">BUY $BLU</div>
                 </div>
-              </Link>
+              </a>
             </div>
             {/* <div class="menu-button close w-nav-button">
               <div class="nav_menu-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentcolor" viewbox="0 0 384 512">
