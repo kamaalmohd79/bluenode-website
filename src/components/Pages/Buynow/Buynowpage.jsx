@@ -103,7 +103,7 @@ function Buynowpage() {
                       </div>
                       <div class="presale_tabs">
                         <div class="presale_tabs-menu ">
-                          <a data-w-tab="Tab 1" class="tab_link w--current"><img src={ethereumImg} alt="" class="presale_icon"></img>
+                          <a data-w-tab="Tab 1" class="tab_link"><img src={ethereumImg} alt="" class="presale_icon"></img>
                             <div>ETH</div>
                           </a>
                           <a class="tab_link "><img src={moneyImg} alt="" class="presale_icon"></img>
@@ -113,7 +113,7 @@ function Buynowpage() {
                             <div>BNB</div>
                           </a>
                           <a class="tab_link "><img src={solanaImg} alt="" class="presale_icon"></img>
-                            <div>Tab 4</div>
+                            <div>SOL</div>
                           </a>
                         </div>
 
