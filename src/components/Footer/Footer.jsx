@@ -3,7 +3,6 @@ import footerLogo  from '../../assets/images/Bluenode-logo.svg'
 import footertwitterLogo  from '../../assets/images/footer social icon.svg'
 import footertelegramLogo  from '../../assets/images/footer telegram logo.svg'
 
-
 function Footer() {
   return (
     <div class="footer" gsap="group">
