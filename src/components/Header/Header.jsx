@@ -57,6 +57,12 @@ function Header() {
     setShowMenu(false);
   };
 
+  const navClose = () => {
+    if (window.innerWidth < 991) {
+      setShowMenu(false);
+    }
+  };
+
 
   return (
     <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav">
@@ -67,14 +73,14 @@ function Header() {
           <div class="nav_menu-holder">
             <div className='navclosebtn' onClick={closeMenu}  ><img src={closeIcon}/ ></div>
             <Link to="home" aria-current="page" class="nav_link w-nav-link w--current">HOME</Link>
-            <Link to="home#about-us" class="nav_link w-nav-link">ABOUT US</Link>
-            <Link to="home#earning" class="nav_link w-nav-link">EARNINGS</Link>
-            <Link to="home#Steps" class="nav_link w-nav-link">QUICK START</Link>
-            <Link to="home#usp" class="nav_link w-nav-link">USP</Link>
-            <Link to="home#roaadmap" class="nav_link w-nav-link">ROADMAP</Link>
-            <Link to="home#faq" class="nav_link w-nav-link">FAQs</Link>
+            <Link to="home#about-us" onClick={navClose}  class="nav_link w-nav-link">ABOUT US</Link>
+            <Link to="home#earning" onClick={navClose} class="nav_link w-nav-link">EARNINGS</Link>
+            <Link to="home#Steps" onClick={navClose}  class="nav_link w-nav-link">QUICK START</Link>
+            <Link to="home#usp" onClick={navClose} class="nav_link w-nav-link">USP</Link>
+            <Link to="home#roaadmap" onClick={navClose} class="nav_link w-nav-link">ROADMAP</Link>
+            <Link to="home#faq" onClick={navClose} class="nav_link w-nav-link">FAQs</Link>
             <div class="nav-btn-wrap">
-              <Link to="/buy-page" class="secoundry-button w-inline-block">
+              <Link to="/buy-page" id="navbuybtn" onClick={navClose} class="secoundry-button w-inline-block">
                 <div class="button_inner-wrap">
                   <div class="blackbtn-icon"> <img src={btnblackIcon} alt="" /></div>
                   <div class="colorbtn-icon "><img src={btncolorIcon } alt="" /></div>
@@ -89,7 +95,7 @@ function Header() {
             </div> */}
             </div>
           </nav>
-          <div class="menu-button w-nav-button" onClick={toggleMenu}>
+          <div class="menu-button w-nav-button" id="navclosebtn" onClick={toggleMenu}>
             <img src={humbergerBtn} alt="" />
           </div> 
         </div>
