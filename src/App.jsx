@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import './App.scss'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header/Header.jsx'
@@ -14,7 +14,7 @@ import Buynowpage from './components/Pages/Buynow/Buynowpage'
 // import Hero from './components/Hero/Hero.jsx';
 // import { useRef } from "react";
 import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
+// import { useGSAP } from "@gsap/react";
 // gsap.registerPlugin(useGSAP);
 
 function App() {
