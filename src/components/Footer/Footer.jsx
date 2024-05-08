@@ -28,11 +28,11 @@ function Footer() {
           </div>
         </div>
         <div className="footer-menu-wrap" >
-          <span className="footer-link">Tokenomics</span>
+          <Link to="/#blu" className="footer-link">Tokenomics</Link>
           <span className="footer-link">NodePaper</span>
           <Link to="/privacy-policy-page" className="footer-link">Privacy Policy</Link>
           <Link to="/terms-page" className="footer-link">Terms &amp; Conditions</Link>
-          <span className="footer-link">Roadmap</span>
+          <Link to="/#roaadmap" className="footer-link">Roadmap</Link>
         </div>
         <div className="copyright-text"  >Copyright© 2024 BlueNode. All rights reserved</div>
       </div>
