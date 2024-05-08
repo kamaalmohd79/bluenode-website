@@ -1,32 +1,31 @@
-import React, { useRef, useEffect } from "react";
+import React, { useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import '../Pages/Landingpage/Mainpage.scss'
-
-
-import stepImg  from '../../assets/images/Steps.svg'
-import stepbgImg  from '../../assets/images/Step-Background.svg'
-import stepdivider  from '../../assets/images/Step-Divider.svg'
-import presaleImg  from '../../assets/images/Presale.svg'
-import downloadextensionImg  from '../../assets/images/Download-Extension.svg'
-import blutokenImg  from '../../assets/images/run.png'
-import cashoutImg  from '../../assets/images/Cashout-step.png'
-import dividerleftLine  from '../../assets/images/Divider-Left-Line.svg'
-import rotateGif  from '../../assets/images/3dgifmaker62304.gif'
-import dividerrightLine  from '../../assets/images/Divider-right-line.svg'
+import stepImg from '../../assets/images/Steps.svg'
+import stepbgImg from '../../assets/images/Step-Background.svg'
+import stepdivider from '../../assets/images/Step-Divider.svg'
+import presaleImg from '../../assets/images/Presale.svg'
+import downloadextensionImg from '../../assets/images/Download-Extension.svg'
+import blutokenImg from '../../assets/images/run.png'
+import cashoutImg from '../../assets/images/Cashout-step.png'
+import dividerleftLine from '../../assets/images/Divider-Left-Line.svg'
+import rotateGif from '../../assets/images/3dgifmaker62304.gif'
+import dividerrightLine from '../../assets/images/Divider-right-line.svg'
+import { Link } from "react-router-dom";
 
 
 
 gsap.registerPlugin(ScrollTrigger);
 function Steps() {
-  
+
     useEffect(() => {
         const processComponent = document.querySelector(".step-component");
         const processSteps = Array.from(processComponent.querySelectorAll(".step_item"));
         const processImages = Array.from(processComponent.querySelectorAll(".step_img-item"));
-    
+
         processSteps[0].classList.add("is-active");
-    
+
         const animations = processImages.map((image, index) => {
             const step = processSteps[index];
             return gsap.to(step, {
@@ -45,12 +44,12 @@ function Steps() {
                 }
             });
         });
-    
+
         return () => {
             animations.forEach(animation => animation.kill());
         };
     }, []);
-  
+
 
 
     return (
@@ -58,14 +57,14 @@ function Steps() {
             <div id="Steps" className="sec_4steps">
                 <div className="container container-large">
                     <div reveal="frombottom" className="section-title-wrap">
-                        <div className="section-tag"><img src={stepImg}  alt="Section tag"></img></div>
+                        <div className="section-tag"><img src={stepImg} alt="Section tag"></img></div>
                         <h2 className="heading-style-h2">Getting Started with BlueNode</h2>
                     </div>
                 </div>
                 <div className="is_forweb" reveal="frombottom">
                     <div id="w-node-_6dc9c58c-fe16-4a45-c53b-eed5049752fb-ab90d4da" className="step_bg-wrap">
                         <div className="div-block">
-                            <div className="step_shadow"></div><img src={stepbgImg}  alt="Step Main Background"></img>
+                            <div className="step_shadow"></div><img src={stepbgImg} alt="Step Main Background"></img>
                         </div>
                     </div>
                     <div className="step-component" >
@@ -119,14 +118,14 @@ function Steps() {
                                                 <p className="step_desc">Convert your BLU tokens earnings into SOL and to any fiat of your choice afterward including USD, GBP, EUR, INR, AUD, CAD, and more!</p>
                                             </div>
                                         </div>
-                                    </div><img src={stepdivider}  alt="Step Joining Line" className="step_divider"></img>
+                                    </div><img src={stepdivider} alt="Step Joining Line" className="step_divider"></img>
                                 </div>
                             </div>
                         </div>
                         <div id="w-node-e19e4b37-cfa6-dc73-040b-4f6b307464e7-ab90d4da" className="grid_item">
                             <div className="step_img-list">
-                                <div className="step_img-item"><img src={presaleImg} loading="eager" alt="Step Main Image" className="step_img"></img></div>
-                                <div className="step_img-item"><img src={downloadextensionImg} loading="eager" alt="Step Main Image" className="step_img"></img></div>
+                                <div className="step_img-item"><img src={presaleImg} loading="eager" alt="Step Main" className="step_img"></img></div>
+                                <div className="step_img-item"><img src={downloadextensionImg} loading="eager" alt="Step Main" className="step_img"></img></div>
                                 <div className="step_img-item"><img src={blutokenImg} alt="" /></div>
                                 <div className="step_img-item"><img src={cashoutImg} alt="" /></div>
                             </div>
@@ -151,7 +150,7 @@ function Steps() {
                                         </div>
                                         <p className="step_desc-mob">Secure your spot today! Simply join our whitelist by acquiring BLU tokens during the presale and claim your unique BlueNode ID.</p>
                                     </div>
-                                    <div className="step_img-wrap-mob"><img src={presaleImg}  alt="" className="step_img-mob"></img></div>
+                                    <div className="step_img-wrap-mob"><img src={presaleImg} alt="" className="step_img-mob"></img></div>
                                 </div>
                             </div>
                             <div id="w-node-_3f9a2325-2863-cfd6-95f9-ba95bf6e2bb5-ab90d4da" className="grid_item">
@@ -165,7 +164,7 @@ function Steps() {
                                         </div>
                                         <p className="step_desc-mob">Dive into action! Download the BlueNode extension and breeze through registration using your unique BlueNode ID. It&#x27;s that simple.</p>
                                     </div>
-                                    <div className="step_img-wrap-mob"><img src={downloadextensionImg}  alt="" className="step_img-mob"></img></div>
+                                    <div className="step_img-wrap-mob"><img src={downloadextensionImg} alt="" className="step_img-mob"></img></div>
                                 </div>
                             </div>
                             <div id="w-node-_73ab11ee-b992-b606-ce0c-19560a4a123c-ab90d4da" className="grid_item">
@@ -198,22 +197,22 @@ function Steps() {
                             </div>
                         </div>
                         <div className="step-btn-wrap">
-                            <a href="#" className="secoundry-button w-inline-block">
+                            <Link to="/buy-page" className="secoundry-button w-inline-block">
                                 <div className="button_inner-wrap">
                                     <div>Join Presale</div>
                                 </div>
-                            </a>
-                            <a href="#" className="secoundry-button w-inline-block">
+                            </Link>
+                            <span className="secoundry-button w-inline-block">
                                 <div className="button_inner-wrap">
                                     <div>How to Buy</div>
                                 </div>
-                            </a>
+                            </span>
                         </div>
                     </div>
                 </div>
                 <div className="section_divider">
-                    <div className="sec_left-divider"><img src={dividerleftLine}  alt="" className="divider_line"></img></div><img src={rotateGif}  alt="" className="rotate-gif"></img>
-                    <div className="sec_right-divider"><img src={dividerrightLine}  alt="" className="divider_line"></img></div>
+                    <div className="sec_left-divider"><img src={dividerleftLine} alt="" className="divider_line"></img></div><img src={rotateGif} alt="" className="rotate-gif"></img>
+                    <div className="sec_right-divider"><img src={dividerrightLine} alt="" className="divider_line"></img></div>
                 </div>
             </div>
         </div>

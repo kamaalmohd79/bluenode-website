@@ -18,7 +18,7 @@ function About() {
                     <div className="about-grid">
                         <div id="w-node-_1409d404-d36d-447d-af6f-c675ecbd639b-ab90d4da" className="grid_item">
                             <div data-w-id="5eab0ea4-3b5c-6088-ae95-5162eea5f83e" className="about-content">
-                                <div className="about-badge"><img src={abtbadgeImg}  alt="Section Tag"></img></div>
+                                <div className="about-badge"><img src={abtbadgeImg} alt="Section Tag"></img></div>
                                 <h2 className="heading-style-h2">The Breakfast of the Champions</h2>
                                 <div className="about-wrap">
                                     <p className="text-size-regular">BlueNode is a carefully designed residential proxy solution that transforms your unused internet bandwidth into passive cryptocurrency income. </p>
@@ -34,25 +34,25 @@ function About() {
                                                 <div>Join Presale</div>
                                             </div>
                                         </Link>
-                                        <a href="#" className="secoundry-button w-inline-block">
+                                        <button className="secoundry-button w-inline-block">
                                             <div className="button_inner-wrap">
                                                 <div>Read NodePaper</div>
                                             </div>
-                                        </a>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div className="grid_item">
-                            <div className="about_img-wrap"><img src={aboutImg}  data-w-id="89741d19-0f80-5148-d39f-4e878da0b839" alt="About us Image" className="about-img"></img></div>
+                            <div className="about_img-wrap"><img src={aboutImg} data-w-id="89741d19-0f80-5148-d39f-4e878da0b839" alt="About us" className="about-img"></img></div>
                         </div>
                     </div>
                     <div className="about_bg-shadow"></div>
                     <div className="about_bg-shadow is_3mob"></div>
                 </div>
                 <div className="section_divider">
-                    <div className="sec_left-divider"><img src={dividerleftLine}  alt="" className="divider_line"></img></div><img src={rotateGif}  alt="" className="rotate-gif"></img>
-                    <div className="sec_right-divider"><img src={dividerrightLine}  alt="" className="divider_line"></img></div>
+                    <div className="sec_left-divider"><img src={dividerleftLine} alt="" className="divider_line"></img></div><img src={rotateGif} alt="" className="rotate-gif"></img>
+                    <div className="sec_right-divider"><img src={dividerrightLine} alt="" className="divider_line"></img></div>
                 </div>
             </section>
         </div>
