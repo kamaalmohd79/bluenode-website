@@ -47,7 +47,7 @@ function Header() {
         <nav  className={`nav_menu-wrap ${showMenu ? 'show' : ''}`}>
           <div className="nav_menu-holder">
             <div className='navclosebtn' onClick={closeMenu}  ><img alt="" src={closeIcon}/ ></div>
-            <Link to="home" aria-current="page" className="nav_link w-nav-link w--current">HOME</Link>
+            <Link to="home#homepage" aria-current="page" onClick={closeMenu} className="nav_link w-nav-link w--current">HOME</Link>
             <Link to="home#about-us" onClick={navClose}  className="nav_link w-nav-link">ABOUT US</Link>
             <Link to="home#earning" onClick={navClose} className="nav_link w-nav-link">EARNINGS</Link>
             <Link to="home#Steps" onClick={navClose}  className="nav_link w-nav-link">QUICK START</Link>
@@ -55,13 +55,13 @@ function Header() {
             <Link to="home#roaadmap" onClick={navClose} className="nav_link w-nav-link">ROADMAP</Link>
             <Link to="home#faq" onClick={navClose} className="nav_link w-nav-link">FAQs</Link>
             <div className="nav-btn-wrap">
-              <a href="/buy-page" id="navbuybtn" onClick={navClose} className="secoundry-button w-inline-block">
+              <Link to="/buy-page" id="navbuybtn" onClick={navClose} className="secoundry-button w-inline-block">
                 <div className="button_inner-wrap">
                   <div className="blackbtn-icon"> <img src={btnblackIcon} alt="" /></div>
                   <div className="colorbtn-icon "><img src={btncolorIcon } alt="" /></div>
                   <div className="btn-text">BUY $BLU</div>
                 </div>
-              </a>
+              </Link>
             </div>
             {/* <div className="menu-button close w-nav-button">
               <div className="nav_menu-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentcolor" viewbox="0 0 384 512">

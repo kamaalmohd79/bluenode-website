@@ -79,7 +79,7 @@ function Mainpage() {
 
   return (
     <div>
-      <div className="main-wrapper">
+      <div className="main-wrapper" id="homepage">
         <div className="overflow-x-clip">
           <section gsap="group" className="sec_hero">
             <div className="container container-large">
