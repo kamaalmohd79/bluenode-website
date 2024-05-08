@@ -400,3 +400,28 @@ body.page_scrolled .nav-content {
    }
    
 }
+
+
+
+.privacypolicy-section{
+
+  padding-top:15rem ;
+
+  @include phone{
+    padding-top: 8rem;
+  }
+  h2{
+    margin-bottom: 2rem;
+    @include phone{
+      font-size:2rem;
+    }
+  }
+
+  p{
+    margin-bottom: 1rem;
+  }
+
+  ul{
+    margin-bottom: 1rem;
+  }
+}

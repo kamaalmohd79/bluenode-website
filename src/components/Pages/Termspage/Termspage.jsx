@@ -4,7 +4,8 @@ import React from 'react'
 
 function Termspage() {
     return (
-        <section className='termspage-section'>
+        <section className='privacypolicy-section'>
+        <div className="container container-large">
             <title>Terms & Conditions</title>
             <p>Welcome to BlueNode! These Terms and Conditions ("Terms") are a legally binding contract between you and BlueNode, governing your access to and use of the BlueNode services on our website, associated applications (such as our browser extension), and features as described below. BlueNode operates on the Solana blockchain and offers a decentralized residential proxy network that allows you to monetize unused internet bandwidth in the form of cryptocurrency ($BLU tokens). By accessing or using our platform, you confirm that you accept these Terms and that you agree to comply with them. If you do not agree to these Terms, you must not use our services.</p>
             <h2>1. Eligibility</h2>
@@ -52,6 +53,7 @@ function Termspage() {
             <p>You agree to defend, indemnify, and hold harmless BlueNode, its officers, directors, employees, agents, licensors, suppliers, and any third-party information providers to the service from and against all claims, losses, expenses, damages, and costs, including reasonable attorneys' fees, resulting from any violation of these Terms by you or arising from or related to your use or misuse of the services.</p>
             <h2>8. Changes to Terms</h2>
             <p>BlueNode reserves the right to modify or replace these Terms at any time at its sole discretion. When we make changes, we will post the revised Terms on this page and update the effective date. Your continued use of the services after such posting will constitute your acceptance of and agreement to such changes.</p>
+        </div>
         </section>
     )
 }

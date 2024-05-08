@@ -452,6 +452,7 @@
     padding-top: 6.75rem;
     padding-bottom: 2.5rem;
     position: relative;
+  
 
     @include phone{
       padding-top: 5rem;
@@ -469,6 +470,7 @@
     margin-right: auto;
     display: flex;
     position: relative;
+    overflow: hidden;
 
     @include phone{
       grid-column-gap: .75rem;

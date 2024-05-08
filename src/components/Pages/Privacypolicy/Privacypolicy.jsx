@@ -5,6 +5,7 @@ import React from 'react'
 function Privacypolicy() {
     return (
         <section className='privacypolicy-section'>
+                    <div className="container container-large" >
             <title>PRIVACY POLICY</title>
             <p>Welcome to BlueNode! Your privacy is important to us. BlueNode, a blockchain-based residential proxy network, is designed to process and share unused internet bandwidth within the framework of the Solana blockchain, providing users with compensation in the form of $BLU tokens. This Privacy Policy outlines how we collect, use, protect, and share information when you interact with our services through our website, mobile applications, and other online products and services (collectively, the “Services”).</p>
             <h2>1. Information We Do Not Collect</h2>
@@ -70,7 +71,10 @@ function Privacypolicy() {
             <h2>Changes to This Privacy Policy</h2>
             <p>If BlueNode decides to make material Changes to this Privacy Policy, we will update you and other users by placing a notice on the Websites or by sending you a notice to the e-mail address BlueNode has on file for you prior to the change becoming effective. </p>
             <p>BlueNode may supplement this process by placing notices on blogs, social networks, etc. You should periodically check the Websites for updates. For any questions, comments, or concerns about BlueNode Privacy Policy or any other issue (including without limitations in order to exercise any of your rights with respect to the managing of your Personal Information) please contact us at: contact@bluenode.com.</p>
+        </div>
+
         </section>
+
     )
 }
 

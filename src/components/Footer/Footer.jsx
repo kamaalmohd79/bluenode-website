@@ -9,7 +9,7 @@ function Footer() {
     <div className="footer" gsap="group">
       <div className="container container-large">
         <div className="footer_shadow"></div>
-        <div className="footer-wrapper" reveal="frombottom">
+        <div className="footer-wrapper" >
           <span className="footer-logo w-inline-block"><img src={footerLogo} alt=""></img></span>
           <div className="footer-desc-wrap">
             <p>Become Part of the Next Big Thing. Join Us.</p>
@@ -27,14 +27,14 @@ function Footer() {
             </button>
           </div>
         </div>
-        <div className="footer-menu-wrap" reveal="frombottom">
+        <div className="footer-menu-wrap" >
           <span className="footer-link">Tokenomics</span>
           <span className="footer-link">NodePaper</span>
           <Link to="/privacy-policy-page" className="footer-link">Privacy Policy</Link>
           <Link to="/terms-page" className="footer-link">Terms &amp; Conditions</Link>
           <span className="footer-link">Roadmap</span>
         </div>
-        <div className="copyright-text" reveal="frombottom" >Copyright© 2024 BlueNode. All rights reserved</div>
+        <div className="copyright-text"  >Copyright© 2024 BlueNode. All rights reserved</div>
       </div>
     </div>
   )
