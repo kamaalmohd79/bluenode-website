@@ -9,7 +9,6 @@ import { Link, useLocation } from 'react-router-dom';
 
 function Header() {
   let location = useLocation()
-  console.log(location.hash)
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY || window.pageYOffset;
