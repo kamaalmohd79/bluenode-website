@@ -18,7 +18,7 @@ function Usp() {
                     <div className="usp_shadow _4"></div>
                     <div data-w-id="8240a945-4139-df69-3ab5-3e45c96369ce" className="usp-wrap">
                         <div className="section-title-wrap">
-                            <div className="section-tag"><img src={upImg}  alt="Section  tag"></img></div>
+                            <div className="section-tag"><img src={upImg} alt="Section  tag"></img></div>
                             <h2 className="heading-style-h2">BLU to the Moon</h2>
                         </div>
                         <div className="usp-grid">
@@ -26,7 +26,7 @@ function Usp() {
                                 <div className="usp-stroke">
                                     <div className="usp_card">
                                         <div className="usp_title-wrap">
-                                            <div className="usp_icon-wrap"><img src={smartdistributionImg}  alt=""></img></div>
+                                            <div className="usp_icon-wrap"><img src={smartdistributionImg} alt=""></img></div>
                                             <div>Smart Distribution</div>
                                         </div>
                                         <p className="text-size-regular">Each time BLU tokens are distributed to users, a 30% fee is levied, where 10% fuels the treasury for rewarding loyal supporters through airdrops, 10% undergoes buyback and burning, and the remaining 10% enhances liquidity</p>
@@ -37,7 +37,7 @@ function Usp() {
                                 <div className="usp-stroke">
                                     <div className="usp_card">
                                         <div className="usp_title-wrap">
-                                            <div className="usp_icon-wrap"><img src={buybackburnImg}  alt=""></img></div>
+                                            <div className="usp_icon-wrap"><img src={buybackburnImg} alt=""></img></div>
                                             <div>Buyback &amp; Burn</div>
                                         </div>
                                         <p className="text-size-regular">Whenever the BLU tokens are issued as rewards, 10% of the reward is immediately treated under buyback and burn action which reduce the overall token supply while making the token more valuable than before.</p>
@@ -48,7 +48,7 @@ function Usp() {
                                 <div className="usp-stroke">
                                     <div className="usp_card">
                                         <div className="usp_title-wrap">
-                                            <div className="usp_icon-wrap"><img src={stakingmultiplierImg}  alt=""></img></div>
+                                            <div className="usp_icon-wrap"><img src={stakingmultiplierImg} alt=""></img></div>
                                             <div>Staking Multiplier</div>
                                         </div>
                                         <p className="text-size-regular">Explore our Staking Multiplier program that lets you reinvest your BLU earnings, unlocking a remarkable APR of 20% to 25%. With each stake, you multiply your rewards and make a bigger cashbag.</p>
@@ -59,7 +59,7 @@ function Usp() {
                                 <div className="usp-stroke">
                                     <div className="usp_card">
                                         <div className="usp_title-wrap">
-                                            <div className="usp_icon-wrap"><img src={instantconversionImg}  alt=""></img></div>
+                                            <div className="usp_icon-wrap"><img src={instantconversionImg} alt=""></img></div>
                                             <div>Instant Conversion</div>
                                         </div>
                                         <p className="text-size-regular">With just 1000 BLU tokens in your wallet, you gain instant access to convert them into Solana. From there, seamlessly cash out through leading centralized exchanges like Binance, turning your crypto earnings into the fiat currency of your choice.</p>
@@ -70,7 +70,7 @@ function Usp() {
                                 <div className="usp-stroke">
                                     <div className="usp_card">
                                         <div className="usp_title-wrap">
-                                            <div className="usp_icon-wrap"><img src={rankingmechanismImg}  alt=""></img></div>
+                                            <div className="usp_icon-wrap"><img src={rankingmechanismImg} alt=""></img></div>
                                             <div>Ranking Mechanism</div>
                                         </div>
                                         <p className="text-size-regular">At BlueNode, we&#x27;re all about going the extra mile. In addition to staking, we introduce a monthly leaderboard where the top 100 contributors, sharing the most unused bandwidth, earn extra BLU tokens through exclusive airdrops.</p>
@@ -78,23 +78,11 @@ function Usp() {
                                 </div>
                             </div>
                         </div>
-                        {/* <div className="ups-btn-row">
-                  <Link to="/buy-page" className="secoundry-button w-inline-block">
-                    <div className="button_inner-wrap">
-                      <div>Buy BLU</div>
-                    </div>
-                  </Link>
-                  <a href="#" className="secoundry-button w-inline-block">
-                    <div className="button_inner-wrap">
-                      <div>How to Buy</div>
-                    </div>
-                  </a>
-                </div> */}
                     </div>
                 </div>
                 <div className="section_divider">
-                    <div className="sec_left-divider"><img src="{dividerleftLine}"  alt="" className="divider_line"></img></div><img src="{rotateGif}"  alt="" className="rotate-gif"></img>
-                    <div className="sec_right-divider"><img src="{dividerrightLine}"  alt="" className="divider_line"></img></div>
+                    <div className="sec_left-divider"><img src="{dividerleftLine}" alt="" className="divider_line"></img></div><img src="{rotateGif}" alt="" className="rotate-gif"></img>
+                    <div className="sec_right-divider"><img src="{dividerrightLine}" alt="" className="divider_line"></img></div>
                 </div>
             </section>
         </div>

@@ -23,26 +23,26 @@ function Roadmap() {
                     <div className="roadmap_shadow"></div>
                     <div className="roadmap_shadow _2"></div>
                     <div reveal="frombottom" className="section-title-wrap">
-                        <div className="section-tag"><img src={roadmapImg}  alt=""></img></div>
+                        <div className="section-tag"><img src={roadmapImg} alt=""></img></div>
                         <h2 className="heading-style-h2">BlueNode Roadmap</h2>
                     </div>
                     <div className="roadmap_swiper-holder" reveal="frombottom">
                         <div className="roadswiper_arrow-wrap">
                             <div className="roadswiper_arrow-stroke road_prev">
                                 <div className="roadswiper-arrow">
-                                    <div className="roadswiper_arrow-icon w-embed"><img src={faqprevIcon} /></div>
+                                    <div className="roadswiper_arrow-icon w-embed"><img src={faqprevIcon} alt=""/></div>
                                 </div>
                             </div>
                             <div className="roadswiper_arrow-stroke road_next">
                                 <div className="roadswiper-arrow">
-                                    <div className="roadswiper_arrow-icon right w-embed"><img src={faqnextIcon} /></div>
+                                    <div className="roadswiper_arrow-icon right w-embed"><img src={faqnextIcon} alt=""/></div>
                                 </div>
                             </div>
                         </div>
                         <div>
-                            <Swiper 
-                            modules={[Navigation]}
-                            slidesPerView={1}
+                            <Swiper
+                                modules={[Navigation]}
+                                slidesPerView={1}
                                 breakpoints={{
                                     768: {
                                         slidesPerView: 2,
@@ -52,19 +52,19 @@ function Roadmap() {
                                     },
                                 }}
                                 navigation={{
-                                    nextEl: '.road_next', 
-                                    prevEl: '.road_prev'  
-                                  }}
+                                    nextEl: '.road_next',
+                                    prevEl: '.road_prev'
+                                }}
                                 loop={true}
                                 autoplay={{
-                                  delay: 4000, 
+                                    delay: 4000,
                                 }}
-                                
+
                                 className="roadmap-swiper">
                                 <SwiperSlide className="swiper-slide roadmap-swiper-slide">
                                     <div className="roadmap_grid">
                                         <div id="w-node-f3a70216-0b62-65bd-889b-dc7c83a69299-ab90d4da" className="grid_item hide_formob">
-                                            <div className="roadmap-arrow-wrap"><img src={roadmaparrowImg}  alt=""></img></div>
+                                            <div className="roadmap-arrow-wrap"><img src={roadmaparrowImg} alt=""></img></div>
                                         </div>
                                         <div id="w-node-f3a70216-0b62-65bd-889b-dc7c83a69288-ab90d4da" className="grid_item">
                                             <div className="roadmap-stroke">
@@ -90,7 +90,7 @@ function Roadmap() {
                                 <SwiperSlide className="swiper-slide roadmap-swiper-slide">
                                     <div className="roadmap_grid">
                                         <div id="w-node-_85e1da57-6b65-2131-1ffe-5b43e4d6cb53-ab90d4da" className="grid_item hide_formob">
-                                            <div className="roadmap-arrow-wrap"><img src={roadmaparrowImg}  alt=""></img></div>
+                                            <div className="roadmap-arrow-wrap"><img src={roadmaparrowImg} alt=""></img></div>
                                         </div>
                                         <div id="w-node-_85e1da57-6b65-2131-1ffe-5b43e4d6cb56-ab90d4da" className="grid_item">
                                             <div className="roadmap-stroke">
@@ -116,7 +116,7 @@ function Roadmap() {
                                 <SwiperSlide className="swiper-slide roadmap-swiper-slide">
                                     <div className="roadmap_grid">
                                         <div id="w-node-_234471fc-68bc-7715-d67c-8f52737a34e0-ab90d4da" className="grid_item hide_formob">
-                                            <div className="roadmap-arrow-wrap"><img src={roadmaparrowImg}  alt=""></img></div>
+                                            <div className="roadmap-arrow-wrap"><img src={roadmaparrowImg} alt=""></img></div>
                                         </div>
                                         <div id="w-node-_234471fc-68bc-7715-d67c-8f52737a34e3-ab90d4da" className="grid_item">
                                             <div className="roadmap-stroke">
@@ -142,7 +142,7 @@ function Roadmap() {
                                 <SwiperSlide className="swiper-slide roadmap-swiper-slide">
                                     <div className="roadmap_grid">
                                         <div id="w-node-afdf5cff-9b92-fc0f-996e-65265672ac03-ab90d4da" className="grid_item hide_formob">
-                                            <div className="roadmap-arrow-wrap"><img src={roadmaparrowImg}  alt=""></img></div>
+                                            <div className="roadmap-arrow-wrap"><img src={roadmaparrowImg} alt=""></img></div>
                                         </div>
                                         <div id="w-node-afdf5cff-9b92-fc0f-996e-65265672ac06-ab90d4da" className="grid_item">
                                             <div className="roadmap-stroke">
@@ -168,7 +168,7 @@ function Roadmap() {
                                 <SwiperSlide className="swiper-slide roadmap-swiper-slide">
                                     <div className="roadmap_grid">
                                         <div id="w-node-a782dd3c-2499-b43d-d509-8ef4779ea850-ab90d4da" className="grid_item hide_formob">
-                                            <div className="roadmap-arrow-wrap"><img src={roadmaparrowImg}  alt=""></img></div>
+                                            <div className="roadmap-arrow-wrap"><img src={roadmaparrowImg} alt=""></img></div>
                                         </div>
                                         <div id="w-node-a782dd3c-2499-b43d-d509-8ef4779ea853-ab90d4da" className="grid_item">
                                             <div className="roadmap-stroke">
@@ -194,7 +194,7 @@ function Roadmap() {
                                 <SwiperSlide className="swiper-slide roadmap-swiper-slide">
                                     <div className="roadmap_grid">
                                         <div id="w-node-_40aefe86-ce17-c3aa-862d-44223a069833-ab90d4da" className="grid_item hide_formob">
-                                            <div className="roadmap-arrow-wrap"><img src={roadmaparrowImg}  alt=""></img></div>
+                                            <div className="roadmap-arrow-wrap"><img src={roadmaparrowImg} alt=""></img></div>
                                         </div>
                                         <div id="w-node-_40aefe86-ce17-c3aa-862d-44223a069836-ab90d4da" className="grid_item">
                                             <div className="roadmap-stroke">
@@ -220,7 +220,7 @@ function Roadmap() {
                                 <SwiperSlide className="swiper-slide roadmap-swiper-slide">
                                     <div className="roadmap_grid">
                                         <div id="w-node-_660a0b6b-0228-2b6f-b74b-8b997ef8d5fe-ab90d4da" className="grid_item hide_formob">
-                                            <div className="roadmap-arrow-wrap"><img src={roadmaparrowImg}  alt=""></img></div>
+                                            <div className="roadmap-arrow-wrap"><img src={roadmaparrowImg} alt=""></img></div>
                                         </div>
                                         <div id="w-node-_660a0b6b-0228-2b6f-b74b-8b997ef8d601-ab90d4da" className="grid_item">
                                             <div className="roadmap-stroke">
@@ -246,7 +246,7 @@ function Roadmap() {
                                 <SwiperSlide className="swiper-slide roadmap-swiper-slide">
                                     <div className="roadmap_grid">
                                         <div id="w-node-_5f3b3a61-6b12-406d-755e-7987df04e968-ab90d4da" className="grid_item hide_formob">
-                                            <div className="roadmap-arrow-wrap"><img src={roadmaparrowImg}  alt=""></img></div>
+                                            <div className="roadmap-arrow-wrap"><img src={roadmaparrowImg} alt=""></img></div>
                                         </div>
                                         <div id="w-node-_5f3b3a61-6b12-406d-755e-7987df04e96b-ab90d4da" className="grid_item">
                                             <div className="roadmap-stroke">
@@ -274,8 +274,8 @@ function Roadmap() {
                     </div>
                 </div>
                 <div className="section_divider">
-                    <div className="sec_left-divider"><img src={dividerleftLine}  alt="" className="divider_line"></img></div><img src={rotateGif}  alt="" className="rotate-gif"></img>
-                    <div className="sec_right-divider"><img src={dividerrightLine}  alt="" className=".divider_line"></img></div>
+                    <div className="sec_left-divider"><img src={dividerleftLine} alt="" className="divider_line"></img></div><img src={rotateGif} alt="" className="rotate-gif"></img>
+                    <div className="sec_right-divider"><img src={dividerrightLine} alt="" className=".divider_line"></img></div>
                 </div>
             </section>
         </div>

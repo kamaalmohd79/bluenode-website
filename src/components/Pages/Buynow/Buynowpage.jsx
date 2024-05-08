@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import './Buynowpage.scss'
 
 
@@ -28,8 +28,6 @@ import facebookIcon from '../../../assets/images/facebook-icon.png'
 import roboIcon from '../../../assets/images/robo-icon.png'
 import whatsappIcon from '../../../assets/images/whatsapp-icon.png'
 import copyIcon from '../../../assets/images/Copy Icon.svg'
-import Header from '../../Header/Header'
-import Footer from '../../Footer/Footer'
 import { useLocation } from 'react-router-dom'
 
 function Buynowpage() {
@@ -45,13 +43,13 @@ function Buynowpage() {
       <div class="main-wrapper">
         <div class="overflow-x-clip">
 
-          <section class="sec_buy-hero"  gsap="group">
+          <section class="sec_buy-hero" gsap="group">
             <div class="container container-large">
               <div class="bg_shadow">
                 <div class="buy_hero-shadow"></div>
                 <div class="buy_hero-shadow _2"></div>
               </div>
-              <div  class="buy_hero-grid">
+              <div class="buy_hero-grid">
                 <div id="w-node-_76d29ec2-9ddc-a8e8-94df-54f16640b8c8-c0ab6ab5" reveal="frombottom" class="grid_item">
                   <div class="buy_hero-wrap">
                     <h1 class="heading_style-h2-48">Join <span class="gradient_text">BlueNode</span> &amp; Tap On the Earning Potential of Your Unused Internet Today!</h1>
@@ -64,11 +62,11 @@ function Buynowpage() {
                           <div>How To Buy</div>
                         </div>
                       </a>
-                      <a href="#" class="secoundry-button w-inline-block">
+                      <button class="secoundry-button w-inline-block">
                         <div class="button_inner-wrap secoundry">
                           <div>Read NodePaper</div>
                         </div>
-                      </a>
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -76,7 +74,7 @@ function Buynowpage() {
                   <div class="buy_presale-stroke">
                     <div class="buy_presale-card">
                       <div class="buy_presale-header">
-                        <div class="buy_presale-title"><img src={rocketImg}  alt="" class="presale_rocket"></img>
+                        <div class="buy_presale-title"><img src={rocketImg} alt="" class="presale_rocket"></img>
                           <div>Buy Presale</div>
                         </div>
                         <div class="presale_raised">
@@ -103,18 +101,18 @@ function Buynowpage() {
                       </div>
                       <div class="presale_tabs">
                         <div class="presale_tabs-menu ">
-                          <a data-w-tab="Tab 1" class="tab_link"><img src={ethereumImg} alt="" class="presale_icon"></img>
+                          <button data-w-tab="Tab 1" class="tab_link"><img src={ethereumImg} alt="" class="presale_icon"></img>
                             <div>ETH</div>
-                          </a>
-                          <a class="tab_link "><img src={moneyImg} alt="" class="presale_icon"></img>
+                          </button>
+                          <button class="tab_link "><img src={moneyImg} alt="" class="presale_icon"></img>
                             <div>USDT</div>
-                          </a>
-                          <a class="tab_link "><img src={bnbImg} alt="" class="presale_icon"></img>
+                          </button>
+                          <button class="tab_link "><img src={bnbImg} alt="" class="presale_icon"></img>
                             <div>BNB</div>
-                          </a>
-                          <a class="tab_link "><img src={solanaImg} alt="" class="presale_icon"></img>
+                          </button>
+                          <button class="tab_link "><img src={solanaImg} alt="" class="presale_icon"></img>
                             <div>SOL</div>
-                          </a>
+                          </button>
                         </div>
 
                       </div>
@@ -142,9 +140,8 @@ function Buynowpage() {
                               </div>
                             </div>
                           </div>
-                          <div class="presale_form-field">Connect Wallet</div><input type="submit" data-wait="Please wait..." class="presale_form-field hide w-button" value="Connect Wallet" />
+                          <button class="presale_form-field">Connect Wallet</button><input type="submit" data-wait="Please wait..." class="presale_form-field hide w-button" value="Connect Wallet" />
                         </form>
-
                       </div>
                     </div>
                   </div>
@@ -156,7 +153,7 @@ function Buynowpage() {
 
           <section class="sec_investors" gsap="group" >
             <div class="container container-large">
-              <div  class="investors_grid">
+              <div class="investors_grid">
                 <div id="w-node-_68177421-f7ed-12fd-ab6d-6f5b38caf74a-c0ab6ab5" reveal="frombottom" class="grid_item">
                   <div class="investors_content">
                     <h2 class="heading_style-h2-48">Earn a <span class="gradient_text">15% Bonus</span> from All Referred Investors!</h2>
@@ -185,11 +182,11 @@ function Buynowpage() {
                       <div class="investor_bottom-content">
                         <p class="investors_desc">Share it directly on your social media!</p>
                         <div class="investor_social-wrap">
-                          <a href="#" class="investor_social-icon w-inline-block"><img src={twitterIcon} alt="" /></a>
-                          <a href="#" class="investor_social-icon w-inline-block"><img src={telegramIcon} alt="" /></a>
-                          <a href="#" class="investor_social-icon w-inline-block"><img src={facebookIcon} alt="" /></a>
-                          <a href="#" class="investor_social-icon w-inline-block"><img src={roboIcon} alt="" /></a>
-                          <a href="#" class="investor_social-icon w-inline-block"><img src={whatsappIcon} alt="" /></a>
+                          <span class="investor_social-icon w-inline-block"><img src={twitterIcon} alt="" /></span>
+                          <span class="investor_social-icon w-inline-block"><img src={telegramIcon} alt="" /></span>
+                          <span class="investor_social-icon w-inline-block"><img src={facebookIcon} alt="" /></span>
+                          <span class="investor_social-icon w-inline-block"><img src={roboIcon} alt="" /></span>
+                          <span class="investor_social-icon w-inline-block"><img src={whatsappIcon} alt="" /></span>
                         </div>
                       </div>
                     </div>
@@ -205,15 +202,15 @@ function Buynowpage() {
 
 
 
-          <section class="sec_referral"  gsap="group">
+          <section class="sec_referral" gsap="group">
             <div class="container container-large">
-              <div  class="referral-wrapper">
+              <div class="referral-wrapper">
                 <h2 class="heading_style-h2-48" reveal="frombottom">Broadcast across social platforms, through emails, or simply through conversation—let your REFERRAL LINK work its magic and watch your BLU grow!</h2>
                 <div class="referral-grid">
                   <div reveal="frombottom" id="w-node-a2861869-7ad2-1c94-67da-1dd0a8096b44-c0ab6ab5" class="grid_item">
                     <div class="referral_stroke">
                       <div class="referral_card">
-                        <div class="referral_icon-wrap"><img src={referralStep1}  alt=""></img></div>
+                        <div class="referral_icon-wrap"><img src={referralStep1} alt=""></img></div>
                         <div class="referral_title-wrap">
                           <div class="referral_title">Step 1</div>
                         </div>
@@ -224,7 +221,7 @@ function Buynowpage() {
                   <div reveal="frombottom" id="w-node-b81ad508-e5b5-b29f-58ca-443f1c6cd6aa-c0ab6ab5" class="grid_item">
                     <div class="referral_stroke">
                       <div class="referral_card">
-                        <div class="referral_icon-wrap"><img src={referralStep2}  alt=""></img></div>
+                        <div class="referral_icon-wrap"><img src={referralStep2} alt=""></img></div>
                         <div class="referral_title-wrap">
                           <div class="referral_title">Step 2</div>
                         </div>
@@ -232,10 +229,10 @@ function Buynowpage() {
                       </div>
                     </div>
                   </div>
-                  <div  reveal="frombottom" id="w-node-_822279f5-a798-16d8-8e5d-b834748f6071-c0ab6ab5" class="grid_item">
+                  <div reveal="frombottom" id="w-node-_822279f5-a798-16d8-8e5d-b834748f6071-c0ab6ab5" class="grid_item">
                     <div class="referral_stroke">
                       <div class="referral_card">
-                        <div class="referral_icon-wrap"><img src={referralStep3}  alt=""></img></div>
+                        <div class="referral_icon-wrap"><img src={referralStep3} alt=""></img></div>
                         <div class="referral_title-wrap">
                           <div class="referral_title">Step 3</div>
                         </div>
@@ -243,10 +240,10 @@ function Buynowpage() {
                       </div>
                     </div>
                   </div>
-                  <div reveal="frombottom"  id="w-node-_41a20ed7-c5ad-a81e-cc9b-6dea99358ba9-c0ab6ab5" class="grid_item">
+                  <div reveal="frombottom" id="w-node-_41a20ed7-c5ad-a81e-cc9b-6dea99358ba9-c0ab6ab5" class="grid_item">
                     <div class="referral_stroke">
                       <div class="referral_card">
-                        <div class="referral_icon-wrap"><img src={referralStep4}  alt=""></img></div>
+                        <div class="referral_icon-wrap"><img src={referralStep4} alt=""></img></div>
                         <div class="referral_title-wrap">
                           <div class="referral_title">Step 4</div>
                         </div>
@@ -290,7 +287,7 @@ function Buynowpage() {
                     <div id="w-node-_2c5033e6-f0d9-c66a-9089-e5728d774037-c0ab6ab5" class="grid_item">
                       <div class="how_buy-content">
                         <div class="hb-header">
-                          <div class="hb_icon-wrap"><img src={howbuyStep1}  alt=""></img></div>
+                          <div class="hb_icon-wrap"><img src={howbuyStep1} alt=""></img></div>
                           <div>STEP 1</div>
                         </div>
                         <p class="text-size-regular-20">If you&#x27;re buying on mobile, we advise using Trust Wallet or Plus Wallet and connecting via the built-in WalletConnect feature. If you are purchasing on a desktop or laptop, ensure you have a MetaMask wallet installed in your browser or utilize one of the supported wallets by WalletConnect.</p>
@@ -300,11 +297,11 @@ function Buynowpage() {
                       <div class="hb_stroke">
                         <div class="hb_card">
                           <div class="hb_inner-grid">
-                            <div id="w-node-_1eb84ef5-f38a-ea74-ea14-29f19635db7a-c0ab6ab5" class="hb_logo-wrap"><img src={metmaskImg}  alt=""></img></div>
-                            <div id="w-node-f06ce932-66c6-0c2e-5201-55104d8a01f3-c0ab6ab5" class="hb_logo-wrap"><img src={coinbaseImg}  alt=""></img></div>
-                            <div id="w-node-e86d394a-7f99-fa74-2bc8-dbbcdaeb42ec-c0ab6ab5" class="hb_logo-wrap"><img src={trustImg}  alt=""></img></div>
-                            <div id="w-node-faac2bcd-5a29-7976-0066-25a75a283e74-c0ab6ab5" class="hb_logo-wrap"><img src={pluswalletImg}  alt=""></img></div>
-                            <div id="w-node-_08ef6525-e0a9-5e28-2d9d-581faa93b864-c0ab6ab5" class="hb_logo-wrap"><img src={walletconnectImg}  alt=""></img></div>
+                            <div id="w-node-_1eb84ef5-f38a-ea74-ea14-29f19635db7a-c0ab6ab5" class="hb_logo-wrap"><img src={metmaskImg} alt=""></img></div>
+                            <div id="w-node-f06ce932-66c6-0c2e-5201-55104d8a01f3-c0ab6ab5" class="hb_logo-wrap"><img src={coinbaseImg} alt=""></img></div>
+                            <div id="w-node-e86d394a-7f99-fa74-2bc8-dbbcdaeb42ec-c0ab6ab5" class="hb_logo-wrap"><img src={trustImg} alt=""></img></div>
+                            <div id="w-node-faac2bcd-5a29-7976-0066-25a75a283e74-c0ab6ab5" class="hb_logo-wrap"><img src={pluswalletImg} alt=""></img></div>
+                            <div id="w-node-_08ef6525-e0a9-5e28-2d9d-581faa93b864-c0ab6ab5" class="hb_logo-wrap"><img src={walletconnectImg} alt=""></img></div>
                           </div>
                         </div>
                       </div>
@@ -319,7 +316,7 @@ function Buynowpage() {
                     <div id="w-node-d39be38c-0038-d969-cc9a-b823e36b4645-c0ab6ab5" class="grid_item">
                       <div class="how_buy-content">
                         <div class="hb-header">
-                          <div class="hb_icon-wrap"><img src={howbuyStep2}  alt=""></img></div>
+                          <div class="hb_icon-wrap"><img src={howbuyStep2} alt=""></img></div>
                           <div>STEP 2</div>
                         </div>
                         <p class="text-size-regular-20">After setting up your preferred wallet provider, click on &quot;Connect Wallet&quot; and choose the appropriate option. If you&#x27;re using a mobile wallet app, select &quot;WalletConnect&quot;. Select your method of purchase (SOL, ETH, BNB, or USDT, ) and input the amount of currency you want to spend to receive $BLU tokens.</p>
@@ -330,7 +327,7 @@ function Buynowpage() {
                     <div id="w-node-c3e0cc69-3127-ace4-611e-757f47ffc115-c0ab6ab5" class="grid_item">
                       <div class="how_buy-content">
                         <div class="hb-header">
-                          <div class="hb_icon-wrap"><img src={howbuyStep3}  alt=""></img></div>
+                          <div class="hb_icon-wrap"><img src={howbuyStep3} alt=""></img></div>
                           <div>STEP 3</div>
                         </div>
                         <p class="text-size-regular-20">Once the presale has concluded, you will be airdropped with your BLU tokens and BlueNode ID. Once the BlueNode extension goes live during Phase V, you can install the extension using your unique BlueNode ID and start sharing your unused internet in return for 500% appreciated BLU tokens.</p>
@@ -338,7 +335,7 @@ function Buynowpage() {
                     </div>
                     <div id="w-node-c3e0cc69-3127-ace4-611e-757f47ffc11e-c0ab6ab5" class="grid_item">
                       <div class="hb_stroke">
-                        <div class="hb_card"><img src={airballonImg}  alt="" class="hb_img"></img></div>
+                        <div class="hb_card"><img src={airballonImg} alt="" class="hb_img"></img></div>
                       </div>
                     </div>
                   </div>

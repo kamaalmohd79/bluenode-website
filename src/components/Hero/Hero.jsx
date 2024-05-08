@@ -56,8 +56,8 @@ function Hero() {
                             </Link>
                         </div>
                     </div>
-                    <div data-w-id="e38c8dfb-f3b9-faea-c35a-3c7fd6b1c5c6" className="hero-img-wrap"><img src={headermainImage}  alt="Hero Main Image"></img></div>
-                    <div className="hero-bg"><img src={herobgImg}  alt="hero Background Image"></img></div>
+                    <div data-w-id="e38c8dfb-f3b9-faea-c35a-3c7fd6b1c5c6" className="hero-img-wrap"><img src={headermainImage} alt="Hero Main"></img></div>
+                    <div className="hero-bg"><img src={herobgImg} alt="hero Background"></img></div>
                     <div className="h-top-shadow"></div>
                     <div className="h-top-shadow _2"></div>
                 </div>

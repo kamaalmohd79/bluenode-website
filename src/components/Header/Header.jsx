@@ -5,18 +5,9 @@ import btncolorIcon from '../../assets/images/logo-icon-color.svg'
 import btnblackIcon from '../../assets/images/logo-icon-black.svg'
 import humbergerBtn from '../../assets/images/humberger_menu.svg'
 import closeIcon from '../../assets/images/close_icon.png'
-import { Link, NavLink } from 'react-router-dom';
-
-
-
-
-
+import { Link } from 'react-router-dom';
 
 function Header() {
-
-  const closeMenuModal = () => {
-    setShowMenu(false);
-  };
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY || window.pageYOffset;
@@ -27,25 +18,10 @@ function Header() {
       }
     };
     window.addEventListener('scroll', handleScroll);
-
-    const handleResize = () => {
-      if (window.innerWidth <= 768) {
-        setShowMenu(false); // Close menu modal on mobile devices
-      }
-      // Add event listener for window resize
-      window.addEventListener('resize', handleResize);
-      // Remove event listener on component unmount
-      return () => {
-        window.removeEventListener('resize', handleResize);
-      };
-
-    };
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []); 
-
-
+  }, []);
 
   const [showMenu, setShowMenu] = useState(false);
 
@@ -63,15 +39,14 @@ function Header() {
     }
   };
 
-
   return (
     <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" className="navbar w-nav">
     <div className="container container-large">
       <div data-w-id="59b5d623-6a9d-4e4c-9a00-613a68b6e4bd" className="nav-content">
-        <a href="#" className="nav-logo w-nav-brand"><img src={logo}  alt="Nav Logo"></img></a>
+        <a href="home" className="nav-logo w-nav-brand"><img src={logo}  alt="Nav Logo"></img></a>
         <nav  className={`nav_menu-wrap ${showMenu ? 'show' : ''}`}>
           <div className="nav_menu-holder">
-            <div className='navclosebtn' onClick={closeMenu}  ><img src={closeIcon}/ ></div>
+            <div className='navclosebtn' onClick={closeMenu}  ><img alt="" src={closeIcon}/ ></div>
             <Link to="home" aria-current="page" className="nav_link w-nav-link w--current">HOME</Link>
             <Link to="home#about-us" onClick={navClose}  className="nav_link w-nav-link">ABOUT US</Link>
             <Link to="home#earning" onClick={navClose} className="nav_link w-nav-link">EARNINGS</Link>
