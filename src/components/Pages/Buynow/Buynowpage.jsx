@@ -35,9 +35,9 @@ function Buynowpage() {
   const { pathname } = useLocation();
 
   // Automatically scrolls to top whenever pathname changes
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, [pathname]);
   return (
     <div>
       <div class="main-wrapper">
