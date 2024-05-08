@@ -44,7 +44,7 @@ function Header() {
     <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" className="navbar w-nav">
     <div className="container container-large">
       <div data-w-id="59b5d623-6a9d-4e4c-9a00-613a68b6e4bd" className="nav-content">
-        <a href="home" className="nav-logo w-nav-brand"><img src={logo}  alt="Nav Logo"></img></a>
+        <a href="/" className="nav-logo w-nav-brand"><img src={logo}  alt="Nav Logo"></img></a>
         <nav  className={`nav_menu-wrap ${showMenu ? 'show' : ''}`}>
           <div className="nav_menu-holder">
             <div className='navclosebtn' onClick={closeMenu}  ><img alt="" src={closeIcon}/ ></div>
