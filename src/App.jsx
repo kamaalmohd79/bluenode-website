@@ -86,7 +86,7 @@ function App() {
         duration: 1,
         ease: 'power4.out',
         scrollTrigger: {
-          trigger: element1,
+          trigger: revealfgrow,
           markers: true,
           start: 'top 80%', // Start when the element is 10% visible
           end: 'bottom bottom'
