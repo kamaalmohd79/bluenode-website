@@ -5,33 +5,20 @@ import Header from './components/Header/Header.jsx'
 import Footer from './components/Footer/Footer.jsx'
 import Mainpage from './components/Pages/Landingpage/Mainpage'
 import Buynowpage from './components/Pages/Buynow/Buynowpage'
-// import FAQPage from './components/Faqs/Faqpage.jsx';
-// import About from './components/About/About.jsx';
-// import Earning from './components/Earning/Earning.jsx';
-// import Steps from './components/Steps/Steps.jsx';
-// import Usp from './components/USP/Usp.jsx';
-// import Roadmap from './components/Roadmap/Roadmap.jsx';
-// import Hero from './components/Hero/Hero.jsx';
 // import { useRef } from "react";
 import gsap from "gsap";
 // import { useGSAP } from "@gsap/react";
 // gsap.registerPlugin(useGSAP);
 
 function App() {
-
-
   useEffect(() => {
-
     // reveal
-
     // Select all sections
     const sections = document.querySelectorAll('[gsap="group"]');
-
     // Loop through each section
     sections.forEach(section => {
       // Select all reveal="frombottom" elements within the current section
       const revealElements = section.querySelectorAll('[reveal="frombottom"]');
-
       // Check if there are multiple reveal elements within the section
       if (revealElements.length > 1) {
         // Apply stagger effect to reveal elements within this section
@@ -70,11 +57,7 @@ function App() {
         });
       }
     });
-
-
     // Reavel end
-
-
     const revealfgrow = document.querySelectorAll('[reveal="grow"]');
     revealfgrow.forEach((element1) => {
       gsap.fromTo(element1, {
@@ -93,10 +76,7 @@ function App() {
         }
       });
     });
-
-
   }, []);
-
 
   return (
     <Router>
