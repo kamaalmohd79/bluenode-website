@@ -46,7 +46,7 @@ function App() {
           stagger: 0.1, // Stagger between elements
           scrollTrigger: {
             trigger: revealElements, // Use the section as the trigger
-            //markers: true,
+            markers: true,
             start: 'top 80%', // Start when the section is 10% visible
             end: 'bottom bottom'
           }
@@ -63,7 +63,7 @@ function App() {
           ease: 'power4.out',
           scrollTrigger: {
             trigger: revealElements, // Use the reveal element as the trigger
-            //markers: true,
+            markers: true,
             start: 'top 80%', // Start when the element is 10% visible
             end: 'bottom bottom'
           }
@@ -87,8 +87,8 @@ function App() {
         ease: 'power4.out',
         scrollTrigger: {
           trigger: element1,
-          //markers: true,
-          start: 'top 95%', // Start when the element is 10% visible
+          markers: true,
+          start: 'top 80%', // Start when the element is 10% visible
           end: 'bottom bottom'
         }
       });
