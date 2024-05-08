@@ -1403,6 +1403,7 @@
     margin-right: auto;
     display: grid;
     position: relative;
+    align-items: center;
 
     @include tablet{
       grid-column-gap: 1.875rem;
