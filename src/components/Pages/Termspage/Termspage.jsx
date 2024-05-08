@@ -48,7 +48,7 @@ function Termspage() {
                     <li>Attempting to gain unauthorized access to, interfere with, damage, or disrupt any parts of the platform, the server on which the platform is stored, or any server, computer, or database connected to the platform.</li>
                     <li>Circumventing or attempting to circumvent any content-filtering techniques or security measures that BlueNode employs, or attempting to access areas or features of the platform that you are not authorized to access.</li>
                 </ul>
-                <h3>Risks and Disclaimers</h3>
+                <h3>6. Risks and Disclaimers</h3>
                 <p>The use of BlueNode and participation in decentralized networks involve various risks, including, but not limited to:</p>
                 <ul>
                     <li>Changes in the regulatory environment.</li>

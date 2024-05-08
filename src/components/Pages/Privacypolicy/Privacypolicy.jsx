@@ -76,7 +76,7 @@ function Privacypolicy() {
                 <h3>7. Sale or Merger</h3>
                 <p>In the event that BlueNode, or substantially all of its assets, are acquired or merged with another business entity, we may transfer or assign the information we have collected from you as part of such merger, acquisition, sale, or other change of control. </p>
                 <p>In such transactions, your information may be part of the assets that are transferred. We will notify you via email and/or a prominent notice on our website of any change in ownership or uses of your personal information, as well as any choices you may have regarding your personal information.</p>
-                <h3>Changes to This Privacy Policy</h3>
+                <h3>8. Changes to This Privacy Policy</h3>
                 <p>If BlueNode decides to make material Changes to this Privacy Policy, we will update you and other users by placing a notice on the Websites or by sending you a notice to the e-mail address BlueNode has on file for you prior to the change becoming effective. </p>
                 <p>BlueNode may supplement this process by placing notices on blogs, social networks, etc. You should periodically check the Websites for updates. For any questions, comments, or concerns about BlueNode Privacy Policy or any other issue (including without limitations in order to exercise any of your rights with respect to the managing of your Personal Information) please contact us at: contact@bluenode.com.</p>
             </div>
