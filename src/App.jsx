@@ -86,7 +86,6 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Mainpage />} exact />
-        <Route path="/home" element={<Mainpage />} exact />
         <Route path="/buy-page" element={<Buynowpage />} />
         <Route path="/privacy-policy-page" element={<Privacypolicy />} />
         <Route path="/terms-page" element={<Termspage />} />

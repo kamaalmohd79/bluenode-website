@@ -48,13 +48,13 @@ function Header() {
         <nav  className={`nav_menu-wrap ${showMenu ? 'show' : ''}`}>
           <div className="nav_menu-holder">
             <div className='navclosebtn' onClick={closeMenu}  ><img alt="" src={closeIcon}/ ></div>
-            <Link to="home#homepage" aria-current="page" onClick={closeMenu} className={`nav_link w-nav-link ${location.hash === "#homepage" ? "w--current" : ""}`}>HOME</Link>
-            <Link to="home#about-us" onClick={navClose}  className={`nav_link w-nav-link ${location.hash === "#about-us" ? "w--current" : ""}`}>ABOUT US</Link>
-            <Link to="home#earning" onClick={navClose} className={`nav_link w-nav-link ${location.hash === "#earning" ? "w--current" : ""}`}>EARNINGS</Link>
-            <Link to="home#Steps" onClick={navClose}  className={`nav_link w-nav-link ${location.hash === "#Steps" ? "w--current" : ""}`}>QUICK START</Link>
-            <Link to="home#usp" onClick={navClose} className={`nav_link w-nav-link ${location.hash === "#usp" ? "w--current" : ""}`}>USP</Link>
-            <Link to="home#roaadmap" onClick={navClose} className={`nav_link w-nav-link ${location.hash === "#roaadmap" ? "w--current" : ""}`}>ROADMAP</Link>
-            <Link to="home#faq" onClick={navClose} className={`nav_link w-nav-link ${location.hash === "#faq" ? "w--current" : ""}`}>FAQs</Link>
+            <Link to="/#homepage" aria-current="page" onClick={closeMenu} className={`nav_link w-nav-link ${location.hash === "#homepage" ? "w--current" : location.hash === '' ? "w--current" : "" }`}>HOME</Link>
+            <Link to="/#about-us" onClick={navClose}  className={`nav_link w-nav-link ${location.hash === "#about-us" ? "w--current" : ""}`}>ABOUT US</Link>
+            <Link to="/#earning" onClick={navClose} className={`nav_link w-nav-link ${location.hash === "#earning" ? "w--current" : ""}`}>EARNINGS</Link>
+            <Link to="/#Steps" onClick={navClose}  className={`nav_link w-nav-link ${location.hash === "#Steps" ? "w--current" : ""}`}>QUICK START</Link>
+            <Link to="/#usp" onClick={navClose} className={`nav_link w-nav-link ${location.hash === "#usp" ? "w--current" : ""}`}>USP</Link>
+            <Link to="/#roaadmap" onClick={navClose} className={`nav_link w-nav-link ${location.hash === "#roaadmap" ? "w--current" : ""}`}>ROADMAP</Link>
+            <Link to="/#faq" onClick={navClose} className={`nav_link w-nav-link ${location.hash === "#faq" ? "w--current" : ""}`}>FAQs</Link>
             <div className="nav-btn-wrap">
               <Link to="/buy-page" id="navbuybtn" onClick={navClose} className="secoundry-button w-inline-block">
                 <div className="button_inner-wrap">
