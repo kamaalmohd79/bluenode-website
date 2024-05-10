@@ -149,3 +149,8 @@ button:focus-visible {
 }
 
 
+
+
+.step_img-item {
+  aspect-ratio: 1/1;
+}
