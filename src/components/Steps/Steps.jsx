@@ -19,39 +19,36 @@ import { Link } from "react-router-dom";
 
 gsap.registerPlugin(ScrollTrigger);
 function Steps() {
+    const processComponent = document.querySelector(".step-component");
+    const processSteps = Array.from(processComponent.querySelectorAll(".step_item"));
+    const processImages = Array.from(processComponent.querySelectorAll(".step_img-item"));
 
     useGSAP(() => {
         setTimeout(() => {
-        const processComponent = document.querySelector(".step-component");
-        const processSteps = Array.from(processComponent.querySelectorAll(".step_item"));
-        const processImages = Array.from(processComponent.querySelectorAll(".step_img-item"));
-
-        processSteps[0].classList.add("is-active");
-
-        const animations = processImages.map((image, index) => {
-            const step = processSteps[index];
-            return gsap.to(step, {
-                scrollTrigger: {
-                    trigger: image,
-                    start: "top center",
-                    end: "bottom center",
-                    markers:true,
-                    onEnter: () => {
-                        processSteps.forEach(s => s.classList.remove("is-active"));
-                        step.classList.add("is-active");
-                    },
-                    onEnterBack: () => {
-                        processSteps.forEach(s => s.classList.remove("is-active"));
-                        step.classList.add("is-active");
+            processSteps[0].classList.add("is-active");
+            const animations = processImages.map((image, index) => {
+                const step = processSteps[index];
+                return gsap.to(step, {
+                    scrollTrigger: {
+                        trigger: image,
+                        start: "top center",
+                        end: "bottom center",
+                        markers: true,
+                        onEnter: () => {
+                            processSteps.forEach(s => s.classList.remove("is-active"));
+                            step.classList.add("is-active");
+                        },
+                        onEnterBack: () => {
+                            processSteps.forEach(s => s.classList.remove("is-active"));
+                            step.classList.add("is-active");
+                        }
                     }
-                }
+                });
             });
-        });
-    
-        return () => {
-            animations.forEach(animation => animation.kill());
-        };
-    }, 4000);
+            return () => {
+                animations.forEach(animation => animation.kill());
+            };
+        }, 2000);
     }, []);
 
 
