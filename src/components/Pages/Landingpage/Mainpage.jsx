@@ -188,7 +188,7 @@ function Mainpage() {
                           </svg></div>
                         <div>):</div>
                       </div>
-                      <div>$0.025</div>
+                      <div>$0.030</div>
                     </div>
                   </div>
                 </div>

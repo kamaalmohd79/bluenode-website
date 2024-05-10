@@ -123,7 +123,7 @@ function Buynowpage() {
                         </div>
                         <div className="total_presale">
                           <div>Next Price:</div>
-                          <div className="text-color-green">$0.025</div>
+                          <div className="text-color-green">$0.030</div>
                         </div>
                       </div>
                       <div className="presale_form-block w-form">
