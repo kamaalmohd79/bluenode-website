@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
@@ -47,10 +47,11 @@ function Steps() {
                 }
             });
         });
-    }, 4000);
+    
         return () => {
             animations.forEach(animation => animation.kill());
         };
+    }, 4000);
     }, []);
 
 
