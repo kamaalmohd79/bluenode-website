@@ -47,10 +47,11 @@ function Steps() {
                 }
             });
         });
-    }, 4000);
+    
         return () => {
             animations.forEach(animation => animation.kill());
         };
+    }, 4000);
     }, []);
 
 
