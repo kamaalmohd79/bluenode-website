@@ -14,72 +14,71 @@ gsap.registerPlugin(useGSAP);
 function App() {
 
   useGSAP(() => {
-    // gsap code here...
-    // reveal
-    // Select all sections
-    const sections = document.querySelectorAll('[gsap="group"]');
-    // Loop through each section
-    sections.forEach(section => {
-      // Select all reveal="frombottom" elements within the current section
-      const revealElements = section.querySelectorAll('[reveal="frombottom"]');
-      // Check if there are multiple reveal elements within the section
-      if (revealElements.length > 1) {
-        // Apply stagger effect to reveal elements within this section
-        gsap.fromTo(revealElements, {
-          y: '200px',
-          opacity: 0
-        }, {
-          y: 0,
-          opacity: 1,
-          duration: 1,
-          ease: 'power4.out',
-          stagger: 0.1, // Stagger between elements
-          scrollTrigger: {
-            trigger: revealElements, // Use the section as the trigger
-            //markers: true,
-            start: 'top 80%', // Start when the section is 10% visible
-            end: 'bottom bottom'
-          }
-        });
-      } else {
-        // If there's only one reveal element within the section, animate it without stagger
-        gsap.fromTo(revealElements, {
-          y: '200px',
-          opacity: 0
-        }, {
-          y: 0,
-          opacity: 1,
-          duration: 1,
-          ease: 'power4.out',
-          scrollTrigger: {
-            trigger: revealElements, // Use the reveal element as the trigger
-           // markers: true,
-            start: 'top 80%', // Start when the element is 10% visible
-            end: 'bottom bottom'
-          }
-        });
-      }
-    });
-    // Reavel end
-    const revealfgrow = document.querySelectorAll('[reveal="grow"]');
-    revealfgrow.forEach((element1) => {
-      gsap.fromTo(element1, {
-        scale: '0.6',
-        opacity: 0
-      }, {
-        scale: 1,
-        opacity: 1,
-        duration: 1,
-        ease: 'power4.out',
+   
+
+    gsap.utils.toArray(".section-tag").forEach(sectionTag=>{
+      gsap.fromTo(sectionTag,{
+        y:200,
+        opacity:0,
+      },{
+        y:0,
+        opacity:1,
+        rotation:0,
+        duration:0.5,
+        delay:0,
         scrollTrigger: {
-          trigger: revealfgrow,
-          //markers: true,
-          start: 'top 80%', // Start when the element is 10% visible
-          end: 'bottom bottom'
+          trigger: sectionTag,
+          start: 'top bottom-=20%',
+          end: 'bottom center+=20%',
+          markers:{startColor: "yellow", endColor: "yellow"}
         }
-      });
-    });
-  })
+      })
+    })
+
+    gsap.utils.toArray("h2").forEach(h2=>{
+      gsap.fromTo(h2,{
+        y:200,
+        opacity:0,
+      },{
+        y:0,
+        opacity:1,
+        rotation:0,
+        duration:0.5,
+      
+        scrollTrigger: {
+          trigger: h2,
+          start: 'top bottom-=25%',
+          end: 'bottom center+=25%',
+          markers:{startColor: "green", endColor: "green"}
+        
+        },
+       
+      })
+    })
+
+    gsap.utils.toArray("[contentwrap]").forEach(contentwrap=>{
+      gsap.fromTo(contentwrap,{
+        y:200,
+        opacity:0,
+      },{
+        y:0,
+        opacity:1,
+        rotation:0,
+        duration:0.5,
+        
+       
+        // scrollTrigger:contentwrap,
+        scrollTrigger: {
+          trigger: contentwrap,
+          start: 'top bottom-=30%',
+          end: 'bottom center+=30%',
+          markers:true,},
+        
+        
+      })
+    })
+ 
+  });
 
   return (
     <Router>

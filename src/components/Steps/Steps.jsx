@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useGSAP } from "@gsap/react";
 import '../Pages/Landingpage/Mainpage.scss'
 import stepImg from '../../assets/images/Steps.svg'
 import stepbgImg from '../../assets/images/Step-Background.svg'
@@ -19,7 +20,7 @@ import { Link } from "react-router-dom";
 gsap.registerPlugin(ScrollTrigger);
 function Steps() {
 
-    useEffect(() => {
+    useGSAP(() => {
         const processComponent = document.querySelector(".step-component");
         const processSteps = Array.from(processComponent.querySelectorAll(".step_item"));
         const processImages = Array.from(processComponent.querySelectorAll(".step_img-item"));

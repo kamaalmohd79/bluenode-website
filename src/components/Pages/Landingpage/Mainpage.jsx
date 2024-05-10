@@ -98,7 +98,7 @@ function Mainpage() {
                         <div>(500%</div>
                         <div className="colorbtn-icon">
                           <img src={lpbadgeIcon} alt="" />
-                          <svg width="100%" height="100%" viewbox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <svg width="100%" height="100%" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M9.36103 6.67836L6.98914 4.21461L1.2844 10.0123L0.5 9.24112L6.99739 2.63757L9.39238 5.12497L13.5124 1.17989L12.3319 0H15.414V3.08092L14.2902 1.95769L9.36103 6.67836ZM3.22943 14.7143H6.94238V9.48865H3.22943V14.7143ZM8.38631 14.7143H12.0993V7.83845H8.38631V14.7143ZM13.5432 4.40053V14.7143H17.2561V4.40053H13.5432Z" fill="url(#paint0_linear_278_3420)"></path>
                             <defs>
                               <lineargradient id="paint0_linear_278_3420" x1="8.87807" y1="0" x2="8.87807" y2="14.7143" gradientunits="userSpaceOnUse">
@@ -143,7 +143,7 @@ function Mainpage() {
                   <div className="about-content">
                     <div className="about-badge"><img src={abtbadgeImg} alt="Section Tag"></img></div>
                     <h2 className="heading-style-h2">The Breakfast of the Champions</h2>
-                    <div className="about-wrap">
+                    <div className="about-wrap" contentwrap="">
                       <p className="text-size-regular">BlueNode is a carefully designed residential proxy solution that transforms your unused internet bandwidth into passive cryptocurrency income. </p>
                       <div className="about-tag">
                         <div className="about-tag-wrapper">
@@ -187,10 +187,10 @@ function Mainpage() {
                   <div className="section-tag"><img src={earningImg} alt="Section tag"></img></div>
                   <h2 className="heading-style-h2">How Much I Can Earn</h2>
                 </div>
-                <div reveal="frombottom" className="earning_desc-wrap">
+                <div reveal="frombottom" className="earning_desc-wrap" contentwrap="">
                   <p className="text-size-regular">If you continue running the BlueNode for a month, that’s anywhere between <span className="gradient_text">1200 USD to 5000 USD</span> worth of BLU tokens in your wallet.</p>
                 </div>
-                <div reveal="frombottom" className="earning-grid">
+                <div reveal="frombottom" className="earning-grid" contentwrap="">
                   <div id="w-node-_9b526fb6-b49a-2ddc-e15f-6c6287477bce-ab90d4da" className="grid_item">
                     <div className="earning-stroke">
                       <div className="earning_card">
@@ -219,10 +219,10 @@ function Mainpage() {
                     </div>
                   </div>
                 </div>
-                <div reveal="frombottom" className="earning_verified">
+                <div reveal="frombottom" className="earning_verified" contentwrap="">
                   <div>All You Need</div>
                 </div>
-                <div reveal="frombottom" className="earning-grid">
+                <div reveal="frombottom" className="earning-grid" contentwrap="" >
                   <div id="w-node-c13fe7b1-b349-f5a6-964b-92d0fddc097b-ab90d4da" className="grid_item">
                     <div className="earning-stroke">
                       <div className="earning_card">
@@ -276,7 +276,7 @@ function Mainpage() {
                   <h2 className="heading-style-h2">BLU to the Moon</h2>
                 </div>
                 <div className="usp-grid" reveal="frombottom">
-                  <div id="w-node-d994acba-6d7e-fdbd-3ce7-8a5abaf2ddfd-ab90d4da" className="grid_item">
+                  <div contentwrap="" id="w-node-d994acba-6d7e-fdbd-3ce7-8a5abaf2ddfd-ab90d4da" className="grid_item">
                     <div className="usp-stroke">
                       <div className="usp_card">
                         <div className="usp_title-wrap">
@@ -287,7 +287,7 @@ function Mainpage() {
                       </div>
                     </div>
                   </div>
-                  <div id="w-node-b5621efe-4e2b-0130-22d2-e382ad27cf98-ab90d4da" className="grid_item">
+                  <div contentwrap="" id="w-node-b5621efe-4e2b-0130-22d2-e382ad27cf98-ab90d4da" className="grid_item">
                     <div className="usp-stroke">
                       <div className="usp_card">
                         <div className="usp_title-wrap">
@@ -298,7 +298,7 @@ function Mainpage() {
                       </div>
                     </div>
                   </div>
-                  <div id="w-node-c6d4b342-322d-87fb-1425-635e8c810d55-ab90d4da" className="grid_item">
+                  <div contentwrap="" id="w-node-c6d4b342-322d-87fb-1425-635e8c810d55-ab90d4da" className="grid_item">
                     <div className="usp-stroke">
                       <div className="usp_card">
                         <div className="usp_title-wrap">
@@ -309,7 +309,7 @@ function Mainpage() {
                       </div>
                     </div>
                   </div>
-                  <div id="w-node-_36765ac4-edf9-27e7-6fff-689b4325aa32-ab90d4da" className="grid_item">
+                  <div contentwrap="" id="w-node-_36765ac4-edf9-27e7-6fff-689b4325aa32-ab90d4da" className="grid_item">
                     <div className="usp-stroke">
                       <div className="usp_card">
                         <div className="usp_title-wrap">
@@ -320,7 +320,7 @@ function Mainpage() {
                       </div>
                     </div>
                   </div>
-                  <div id="w-node-_7755e4ae-20ca-b034-d4c5-89e00f811e3f-ab90d4da" className="grid_item">
+                  <div contentwrap="" id="w-node-_7755e4ae-20ca-b034-d4c5-89e00f811e3f-ab90d4da" className="grid_item">
                     <div className="usp-stroke">
                       <div className="usp_card">
                         <div className="usp_title-wrap">
