@@ -21,6 +21,7 @@ gsap.registerPlugin(ScrollTrigger);
 function Steps() {
 
     useGSAP(() => {
+        setTimeout(() => {
         const processComponent = document.querySelector(".step-component");
         const processSteps = Array.from(processComponent.querySelectorAll(".step_item"));
         const processImages = Array.from(processComponent.querySelectorAll(".step_img-item"));
@@ -46,7 +47,7 @@ function Steps() {
                 }
             });
         });
-
+    }, 4000);
         return () => {
             animations.forEach(animation => animation.kill());
         };
