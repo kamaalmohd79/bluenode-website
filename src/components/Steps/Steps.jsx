@@ -26,6 +26,9 @@ function Steps() {
         const processSteps = Array.from(processComponent.querySelectorAll(".step_item"));
         const processImages = Array.from(processComponent.querySelectorAll(".step_img-item"));
         setTimeout(() => {
+            const processComponent = document.querySelector(".step-component");
+            const processSteps = Array.from(processComponent.querySelectorAll(".step_item"));
+            const processImages = Array.from(processComponent.querySelectorAll(".step_img-item"));
             processSteps[0].classList.add("is-active");
             const animations = processImages.map((image, index) => {
                 const step = processSteps[index];
@@ -51,8 +54,6 @@ function Steps() {
             };
         }, 2000);
     }, []);
-
-
 
     return (
         <div>
