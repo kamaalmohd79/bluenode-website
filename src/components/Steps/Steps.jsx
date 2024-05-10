@@ -34,6 +34,7 @@ function Steps() {
                     trigger: image,
                     start: "top center",
                     end: "bottom center",
+                    markers:true,
                     onEnter: () => {
                         processSteps.forEach(s => s.classList.remove("is-active"));
                         step.classList.add("is-active");
