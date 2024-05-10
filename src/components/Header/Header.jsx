@@ -1,28 +1,29 @@
 import './Header.scss'
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import logo from '../../assets/images/nav-logo.svg'
 import btncolorIcon from '../../assets/images/logo-icon-color.svg'
 import btnblackIcon from '../../assets/images/logo-icon-black.svg'
 import humbergerBtn from '../../assets/images/humberger_menu.svg'
 import closeIcon from '../../assets/images/close_icon.png'
-import { Link, useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 
 function Header() {
   let location = useLocation()
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY || window.pageYOffset;
-      if (scrollPosition >= 100) {
-        document.body.classList.add('page_scrolled');
-      } else {
-        document.body.classList.remove('page_scrolled');
-      }
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const scrollPosition = window.scrollY || window.pageYOffset;
+  //     if (scrollPosition >= 100) {
+  //       document.body.classList.add('page_scrolled');
+  //     } else {
+  //       document.body.classList.remove('page_scrolled');
+  //     }
+  //   };
+  //   window.addEventListener('scroll', handleScroll);
+  //   return () => {
+  //     window.removeEventListener('scroll', handleScroll);
+  //   };
+  // }, []);
 
   const [showMenu, setShowMenu] = useState(false);
 
@@ -48,15 +49,15 @@ function Header() {
         <nav  className={`nav_menu-wrap ${showMenu ? 'show' : ''}`}>
           <div className="nav_menu-holder">
             <div className='navclosebtn' onClick={closeMenu}  ><img alt="" src={closeIcon}/ ></div>
-            <Link to="/#homepage" aria-current="page" onClick={closeMenu} className={`nav_link w-nav-link ${location.hash === "#homepage" ? "w--current" : location.hash === '' ? "w--current" : "" }`}>HOME</Link>
-            <Link to="/#about-us" onClick={navClose}  className={`nav_link w-nav-link ${location.hash === "#about-us" ? "w--current" : ""}`}>ABOUT US</Link>
-            <Link to="/#earning" onClick={navClose} className={`nav_link w-nav-link ${location.hash === "#earning" ? "w--current" : ""}`}>EARNINGS</Link>
-            <Link to="/#Steps" onClick={navClose}  className={`nav_link w-nav-link ${location.hash === "#Steps" ? "w--current" : ""}`}>QUICK START</Link>
-            <Link to="/#usp" onClick={navClose} className={`nav_link w-nav-link ${location.hash === "#usp" ? "w--current" : ""}`}>USP</Link>
-            <Link to="/#roaadmap" onClick={navClose} className={`nav_link w-nav-link ${location.hash === "#roaadmap" ? "w--current" : ""}`}>ROADMAP</Link>
-            <Link to="/#faq" onClick={navClose} className={`nav_link w-nav-link ${location.hash === "#faq" ? "w--current" : ""}`}>FAQs</Link>
+            <Link smooth to="/#homepage" aria-current="page" onClick={closeMenu} className={`nav_link w-nav-link ${location.hash === "#homepage" ? "w--current" : location.hash === '' ? "w--current" : "" }`}>HOME</Link>
+            <Link smooth to="/#about-us" onClick={navClose}  className={`nav_link w-nav-link ${location.hash === "#about-us" ? "w--current" : ""}`}>ABOUT US</Link>
+            <Link smooth to="/#earning" onClick={navClose} className={`nav_link w-nav-link ${location.hash === "#earning" ? "w--current" : ""}`}>EARNINGS</Link>
+            <Link smooth to="/#Steps" onClick={navClose}  className={`nav_link w-nav-link ${location.hash === "#Steps" ? "w--current" : ""}`}>QUICK START</Link>
+            <Link smooth to="/#usp" onClick={navClose} className={`nav_link w-nav-link ${location.hash === "#usp" ? "w--current" : ""}`}>USP</Link>
+            <Link smooth to="/#roaadmap" onClick={navClose} className={`nav_link w-nav-link ${location.hash === "#roaadmap" ? "w--current" : ""}`}>ROADMAP</Link>
+            <Link smooth to="/#faq" onClick={navClose} className={`nav_link w-nav-link ${location.hash === "#faq" ? "w--current" : ""}`}>FAQs</Link>
             <div className="nav-btn-wrap">
-              <Link to="/buy-page" id="navbuybtn" onClick={navClose} className="secoundry-button w-inline-block">
+              <Link smooth to="/buy-page" id="navbuybtn" onClick={navClose} className="secoundry-button w-inline-block">
                 <div className="button_inner-wrap">
                   <div className="blackbtn-icon"> <img src={btnblackIcon} alt="" /></div>
                   <div className="colorbtn-icon "><img src={btncolorIcon } alt="" /></div>
