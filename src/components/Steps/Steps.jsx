@@ -6,10 +6,10 @@ import '../Pages/Landingpage/Mainpage.scss'
 import stepImg from '../../assets/images/Steps.svg'
 import stepbgImg from '../../assets/images/Step-Background.svg'
 import stepdivider from '../../assets/images/Step-Divider.svg'
-import presaleImg from '../../assets/images/Presale.svg'
-import downloadextensionImg from '../../assets/images/Download-Extension.svg'
-import blutokenImg from '../../assets/images/run.png'
-import cashoutImg from '../../assets/images/Cashout-step.png'
+import presaleImg from '../../assets/images/setp-01.webp'
+import downloadextensionImg from '../../assets/images/setp-02.webp'
+import blutokenImg from '../../assets/images/setp-03.webp'
+import cashoutImg from '../../assets/images/setp-04.webp'
 import dividerleftLine from '../../assets/images/Divider-Left-Line.svg'
 import rotateGif from '../../assets/images/3dgifmaker62304.gif'
 import dividerrightLine from '../../assets/images/Divider-right-line.svg'
@@ -19,11 +19,12 @@ import { Link } from "react-router-dom";
 
 gsap.registerPlugin(ScrollTrigger);
 function Steps() {
-    const processComponent = document.querySelector(".step-component");
-    const processSteps = Array.from(processComponent.querySelectorAll(".step_item"));
-    const processImages = Array.from(processComponent.querySelectorAll(".step_img-item"));
+
 
     useGSAP(() => {
+        const processComponent = document.querySelector(".step-component");
+        const processSteps = Array.from(processComponent.querySelectorAll(".step_item"));
+        const processImages = Array.from(processComponent.querySelectorAll(".step_img-item"));
         setTimeout(() => {
             processSteps[0].classList.add("is-active");
             const animations = processImages.map((image, index) => {
