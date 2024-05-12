@@ -29,8 +29,107 @@ import roboIcon from '../../../assets/images/robo-icon.png'
 import whatsappIcon from '../../../assets/images/whatsapp-icon.png'
 import copyIcon from '../../../assets/images/Copy Icon.svg'
 import { useLocation } from 'react-router-dom'
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+gsap.registerPlugin(useGSAP);
 
 function Buynowpage() {
+
+  useGSAP(() => {
+    var tl = gsap.timeline();
+    tl.fromTo(
+      ".sec_buy-hero h1",
+      { y: 200, opacity: 0 },
+      { y: 0, opacity: 1, duration: 0.5 }
+    );
+    tl.fromTo(
+      ".sec_buy-hero .buy_desc-wrap",
+      { y: 200, opacity: 0 },
+      { y: 0, opacity: 1, duration: 0.5 },
+      "-=0.2"
+    );
+    tl.fromTo(
+      ".sec_buy-hero .buy_btn-wrap",
+      { y: 200, opacity: 0 },
+      { y: 0, opacity: 1, duration: 0.5 },
+      "-=0.2"
+    );
+    tl.fromTo(
+      ".sec_buy-hero .buy_presale-stroke",
+      { scale: 0.8, opacity: 0 },
+      { scale: 1, opacity: 1, duration: 0.5 },
+      "-=0.2"
+    );
+
+    gsap.utils.toArray("h2").forEach((h2) => {
+      gsap.fromTo(
+        h2,
+        {
+          y: 200,
+          opacity: 0,
+        },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 0.5,
+
+          scrollTrigger: {
+            trigger: h2,
+            start: "top bottom-=25%",
+            end: "bottom center+=25%",
+            // markers:{startColor: "green", endColor: "green"}
+          },
+        }
+      );
+    });
+
+    gsap.utils.toArray("[contentwrap]").forEach((contentwrap) => {
+      gsap.fromTo(
+        contentwrap,
+        {
+          y: 200,
+          opacity: 0,
+        },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 0.5,
+          scrollTrigger: {
+            trigger: contentwrap,
+            start: "top bottom-=30%",
+            end: "bottom center+=30%",
+            // markers:true,
+          },
+        }
+      );
+    });
+
+    gsap.utils.toArray("[imggrow]").forEach((imggrow) => {
+      gsap.fromTo(
+        imggrow,
+        {
+          scale: 0.8,
+          opacity: 0,
+        },
+        {
+          scale: 1,
+          opacity: 1,
+          duration: 0.5,
+          // scrollTrigger:contentwrap,
+          scrollTrigger: {
+            trigger: imggrow,
+            start: "top bottom-=30%",
+            end: "bottom center+=30%",
+            markers: true,
+          },
+        }
+      );
+    });
+  });
+
+
+
+
   // Extracts pathname property(key) from an object
   const { pathname } = useLocation();
 
@@ -43,7 +142,7 @@ function Buynowpage() {
       <div className="main-wrapper">
         <div className="overflow-x-clip">
 
-          <section className="sec_buy-hero" gsap="group">
+          <section className="sec_buy-hero" >
             <div className="container container-large">
               <div className="bg_shadow">
                 <div className="buy_hero-shadow"></div>
@@ -70,7 +169,7 @@ function Buynowpage() {
                     </div>
                   </div>
                 </div>
-                <div id="w-node-_6818cf46-f94e-a0d4-808a-17b6ed6e6673-c0ab6ab5" reveal="grow" className="grid_item">
+                <div id="w-node-_6818cf46-f94e-a0d4-808a-17b6ed6e6673-c0ab6ab5"  className="grid_item">
                   <div className="buy_presale-stroke">
                     <div className="buy_presale-card">
                       <div className="buy_presale-header">
@@ -154,13 +253,13 @@ function Buynowpage() {
           <section className="sec_investors" gsap="group" >
             <div className="container container-large">
               <div className="investors_grid">
-                <div id="w-node-_68177421-f7ed-12fd-ab6d-6f5b38caf74a-c0ab6ab5" reveal="frombottom" className="grid_item">
+                <div id="w-node-_68177421-f7ed-12fd-ab6d-6f5b38caf74a-c0ab6ab5"  className="grid_item">
                   <div className="investors_content">
                     <h2 className="heading_style-h2-48">Earn a <span className="gradient_text">15% Bonus</span> from All Referred Investors!</h2>
-                    <p className="text-size-regular-20">Spread the word using your personal link and watch the rewards roll in! Earn a generous 15% of every BLU investment made by friends, family, and your network.</p>
+                    <p contentwrap="" className="text-size-regular-20">Spread the word using your personal link and watch the rewards roll in! Earn a generous 15% of every BLU investment made by friends, family, and your network.</p>
                   </div>
                 </div>
-                <div id="w-node-_9a96111e-3851-1456-0164-5b8b3bf4b273-c0ab6ab5" reveal="frombottom" className="grid_item">
+                <div id="w-node-_9a96111e-3851-1456-0164-5b8b3bf4b273-c0ab6ab5" imggrow="" className="grid_item">
                   <div className="investors_stroke">
                     <div className="investor_top-content">
                       <div className="investor_title">Earn More BLU By Referring Your Friends &amp; Family</div>
@@ -207,7 +306,7 @@ function Buynowpage() {
               <div className="referral-wrapper">
                 <h2 className="heading_style-h2-48" reveal="frombottom">Broadcast across social platforms, through emails, or simply through conversation—let your REFERRAL LINK work its magic and watch your BLU grow!</h2>
                 <div className="referral-grid">
-                  <div reveal="frombottom" id="w-node-a2861869-7ad2-1c94-67da-1dd0a8096b44-c0ab6ab5" className="grid_item">
+                  <div contentwrap="" id="w-node-a2861869-7ad2-1c94-67da-1dd0a8096b44-c0ab6ab5" className="grid_item">
                     <div className="referral_stroke">
                       <div className="referral_card">
                         <div className="referral_icon-wrap"><img src={referralStep1} alt=""></img></div>
@@ -218,7 +317,7 @@ function Buynowpage() {
                       </div>
                     </div>
                   </div>
-                  <div reveal="frombottom" id="w-node-b81ad508-e5b5-b29f-58ca-443f1c6cd6aa-c0ab6ab5" className="grid_item">
+                  <div contentwrap="" id="w-node-b81ad508-e5b5-b29f-58ca-443f1c6cd6aa-c0ab6ab5" className="grid_item">
                     <div className="referral_stroke">
                       <div className="referral_card">
                         <div className="referral_icon-wrap"><img src={referralStep2} alt=""></img></div>
@@ -229,7 +328,7 @@ function Buynowpage() {
                       </div>
                     </div>
                   </div>
-                  <div reveal="frombottom" id="w-node-_822279f5-a798-16d8-8e5d-b834748f6071-c0ab6ab5" className="grid_item">
+                  <div contentwrap="" id="w-node-_822279f5-a798-16d8-8e5d-b834748f6071-c0ab6ab5" className="grid_item">
                     <div className="referral_stroke">
                       <div className="referral_card">
                         <div className="referral_icon-wrap"><img src={referralStep3} alt=""></img></div>
@@ -240,7 +339,7 @@ function Buynowpage() {
                       </div>
                     </div>
                   </div>
-                  <div reveal="frombottom" id="w-node-_41a20ed7-c5ad-a81e-cc9b-6dea99358ba9-c0ab6ab5" className="grid_item">
+                  <div contentwrap="" id="w-node-_41a20ed7-c5ad-a81e-cc9b-6dea99358ba9-c0ab6ab5" className="grid_item">
                     <div className="referral_stroke">
                       <div className="referral_card">
                         <div className="referral_icon-wrap"><img src={referralStep4} alt=""></img></div>
@@ -252,7 +351,7 @@ function Buynowpage() {
                     </div>
                   </div>
                 </div>
-                <div className="referral_list" reveal="frombottom" >
+                <div className="referral_list" contentwrap="" >
                   <div className="referral_item">
                     <div className="referral_item-icon"></div>
                     <p>Witness your earnings grow with your expanding network, generating passive income even while you sleep.</p>
@@ -279,12 +378,12 @@ function Buynowpage() {
           <section id="how-to-buy-blu-tokens" className="sec_how-buy" gsap="group">
             <div className="container container-large">
               <div data-w-id="1fb4a6df-0183-9d36-b8eb-b12aee327b22" className="how_wrapper">
-                <div className="how_title-wrap" reveal="frombottom"  >
+                <div className="how_title-wrap">
                   <h2 className="heading_style-h2-48">How To Buy <span className="gradient_text">BLU Tokens</span></h2>
                 </div>
                 <div className="how_list">
-                  <div className="how_buy-grid" reveal="frombottom" >
-                    <div id="w-node-_2c5033e6-f0d9-c66a-9089-e5728d774037-c0ab6ab5" className="grid_item">
+                  <div className="how_buy-grid"  >
+                    <div id="w-node-_2c5033e6-f0d9-c66a-9089-e5728d774037-c0ab6ab5" contentwrap="" className="grid_item">
                       <div className="how_buy-content">
                         <div className="hb-header">
                           <div className="hb_icon-wrap"><img src={howbuyStep1} alt=""></img></div>
@@ -293,7 +392,7 @@ function Buynowpage() {
                         <p className="text-size-regular-20">If you&#x27;re buying on mobile, we advise using Trust Wallet or Plus Wallet and connecting via the built-in WalletConnect feature. If you are purchasing on a desktop or laptop, ensure you have a MetaMask wallet installed in your browser or utilize one of the supported wallets by WalletConnect.</p>
                       </div>
                     </div>
-                    <div id="w-node-d8c7a47d-b11a-dace-1b09-b997e8e70f42-c0ab6ab5" className="grid_item">
+                    <div id="w-node-d8c7a47d-b11a-dace-1b09-b997e8e70f42-c0ab6ab5" contentwrap="" className="grid_item">
                       <div className="hb_stroke">
                         <div className="hb_card">
                           <div className="hb_inner-grid">
@@ -307,13 +406,13 @@ function Buynowpage() {
                       </div>
                     </div>
                   </div>
-                  <div className="how_buy-grid _2" reveal="frombottom" >
-                    <div id="w-node-d39be38c-0038-d969-cc9a-b823e36b464e-c0ab6ab5" className="grid_item">
+                  <div className="how_buy-grid _2" >
+                    <div id="w-node-d39be38c-0038-d969-cc9a-b823e36b464e-c0ab6ab5" className="grid_item" contentwrap="">
                       <div className="hb_stroke">
                         <div className="hb_card"><img src={quickbuyImg} alt="" className="hb_img"></img></div>
                       </div>
                     </div>
-                    <div id="w-node-d39be38c-0038-d969-cc9a-b823e36b4645-c0ab6ab5" className="grid_item">
+                    <div id="w-node-d39be38c-0038-d969-cc9a-b823e36b4645-c0ab6ab5" className="grid_item" contentwrap="">
                       <div className="how_buy-content">
                         <div className="hb-header">
                           <div className="hb_icon-wrap"><img src={howbuyStep2} alt=""></img></div>
@@ -323,8 +422,8 @@ function Buynowpage() {
                       </div>
                     </div>
                   </div>
-                  <div className="how_buy-grid" reveal="frombottom" >
-                    <div id="w-node-c3e0cc69-3127-ace4-611e-757f47ffc115-c0ab6ab5" className="grid_item">
+                  <div className="how_buy-grid" contentwrap="" >
+                    <div id="w-node-c3e0cc69-3127-ace4-611e-757f47ffc115-c0ab6ab5" className="grid_item" >
                       <div className="how_buy-content">
                         <div className="hb-header">
                           <div className="hb_icon-wrap"><img src={howbuyStep3} alt=""></img></div>

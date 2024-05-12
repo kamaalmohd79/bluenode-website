@@ -39,7 +39,7 @@ function Roadmap() {
                                 </div>
                             </div>
                         </div>
-                        <div>
+                        <div contentwrap="">
                             <Swiper
                                 modules={[Navigation]}
                                 slidesPerView={1}

@@ -64,7 +64,7 @@ function Steps() {
                         <h2 className="heading-style-h2">Getting Started with BlueNode</h2>
                     </div>
                 </div>
-                <div className="is_forweb" reveal="frombottom">
+                <div className="is_forweb" reveal="frombottom" contentwrap="">
                     <div id="w-node-_6dc9c58c-fe16-4a45-c53b-eed5049752fb-ab90d4da" className="step_bg-wrap">
                         <div className="div-block">
                             <div className="step_shadow"></div><img src={stepbgImg} alt="Step Main Background"></img>
