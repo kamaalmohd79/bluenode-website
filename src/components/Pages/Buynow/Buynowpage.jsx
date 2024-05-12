@@ -35,101 +35,105 @@ gsap.registerPlugin(useGSAP);
 
 function Buynowpage() {
 
+
+
   useGSAP(() => {
-    var tl = gsap.timeline();
-    tl.fromTo(
-      ".sec_buy-hero h1",
-      { y: 200, opacity: 0 },
-      { y: 0, opacity: 1, duration: 0.5 }
-    );
-    tl.fromTo(
-      ".sec_buy-hero .buy_desc-wrap",
-      { y: 200, opacity: 0 },
-      { y: 0, opacity: 1, duration: 0.5 },
-      "-=0.2"
-    );
-    tl.fromTo(
-      ".sec_buy-hero .buy_btn-wrap",
-      { y: 200, opacity: 0 },
-      { y: 0, opacity: 1, duration: 0.5 },
-      "-=0.2"
-    );
-    tl.fromTo(
-      ".sec_buy-hero .buy_presale-stroke",
-      { scale: 0.8, opacity: 0 },
-      { scale: 1, opacity: 1, duration: 0.5 },
-      "-=0.2"
-    );
 
-    gsap.utils.toArray("h2").forEach((h2) => {
-      gsap.fromTo(
-        h2,
-        {
-          y: 200,
-          opacity: 0,
-        },
-        {
-          y: 0,
-          opacity: 1,
-          duration: 0.5,
+    let mm = gsap.matchMedia();
 
-          scrollTrigger: {
-            trigger: h2,
-            start: "top bottom-=25%",
-            end: "bottom center+=25%",
-            // markers:{startColor: "green", endColor: "green"}
-          },
-        }
+    mm.add("(min-width: 800px)", () => {
+      var tl = gsap.timeline();
+      tl.fromTo(
+        ".sec_buy-hero h1",
+        { y: 200, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.5 }
       );
-    });
-
-    gsap.utils.toArray("[contentwrap]").forEach((contentwrap) => {
-      gsap.fromTo(
-        contentwrap,
-        {
-          y: 200,
-          opacity: 0,
-        },
-        {
-          y: 0,
-          opacity: 1,
-          duration: 0.5,
-          scrollTrigger: {
-            trigger: contentwrap,
-            start: "top bottom-=30%",
-            end: "bottom center+=30%",
-            // markers:true,
-          },
-        }
+      tl.fromTo(
+        ".sec_buy-hero .buy_desc-wrap",
+        { y: 200, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.5 },
+        "-=0.2"
       );
-    });
-
-    gsap.utils.toArray("[imggrow]").forEach((imggrow) => {
-      gsap.fromTo(
-        imggrow,
-        {
-          scale: 0.8,
-          opacity: 0,
-        },
-        {
-          scale: 1,
-          opacity: 1,
-          duration: 0.5,
-          // scrollTrigger:contentwrap,
-          scrollTrigger: {
-            trigger: imggrow,
-            start: "top bottom-=30%",
-            end: "bottom center+=30%",
-            markers: true,
-          },
-        }
+      tl.fromTo(
+        ".sec_buy-hero .buy_btn-wrap",
+        { y: 200, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.5 },
+        "-=0.2"
       );
+      tl.fromTo(
+        ".sec_buy-hero .buy_presale-stroke",
+        { scale: 0.8, opacity: 0 },
+        { scale: 1, opacity: 1, duration: 0.5 },
+        "-=0.2"
+      );
+    
+      gsap.utils.toArray("h2").forEach((h2) => {
+        gsap.fromTo(
+          h2,
+          {
+            y: 200,
+            opacity: 0,
+          },
+          {
+            y: 0,
+            opacity: 1,
+            duration: 0.5,
+            scrollTrigger: {
+              trigger: h2,
+              start: "top bottom-=25%",
+              end: "bottom center+=25%",
+              // markers:{startColor: "green", endColor: "green"}
+            },
+          }
+        );
+      });
+    
+      gsap.utils.toArray("[contentwrap]").forEach((contentwrap) => {
+        gsap.fromTo(
+          contentwrap,
+          {
+            y: 200,
+            opacity: 0,
+          },
+          {
+            y: 0,
+            opacity: 1,
+            duration: 0.5,
+            scrollTrigger: {
+              trigger: contentwrap,
+              start: "top bottom-=30%",
+              end: "bottom center+=30%",
+              // markers:true,
+            },
+          }
+        );
+      });
+    
+      gsap.utils.toArray("[imggrow]").forEach((imggrow) => {
+        gsap.fromTo(
+          imggrow,
+          {
+            scale: 0.8,
+            opacity: 0,
+          },
+          {
+            scale: 1,
+            opacity: 1,
+            duration: 0.5,
+            // scrollTrigger:contentwrap,
+            scrollTrigger: {
+              trigger: imggrow,
+              start: "top bottom-=30%",
+              end: "bottom center+=30%",
+              //markers: true,
+            },
+          }
+        );
+      });
     });
+    
+
   });
-
-
-
-
   // Extracts pathname property(key) from an object
   const { pathname } = useLocation();
 

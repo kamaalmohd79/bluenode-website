@@ -63,6 +63,10 @@ gsap.registerPlugin(useGSAP);
 
 function Mainpage() {
   useGSAP(() => {
+    let mm = gsap.matchMedia();
+
+    mm.add("(min-width: 800px)", () => {
+
     var tl = gsap.timeline();
     tl.fromTo(
       ".sec_hero h1",
@@ -176,13 +180,13 @@ function Mainpage() {
             trigger: imggrow,
             start: "top bottom-=30%",
             end: "bottom center+=30%",
-            markers: true,
+            //markers: true,
           },
         }
       );
     });
   });
-
+});
   const location = useLocation();
   const lastHash = useRef("");
   useEffect(() => {
